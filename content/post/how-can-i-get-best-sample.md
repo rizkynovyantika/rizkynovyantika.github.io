@@ -4,7 +4,7 @@ authorAvatar: "/img/avatar.png"
 date: 2018-02-26T13:22:44+07:00
 title: "How Can I Get Best Sample"
 description: ""
-draft: true
+draft: false
 
 categories: []
 tags: []
@@ -16,8 +16,6 @@ image: "img/writing.jpg"
 next: ""
 prev: ""
 ---
-
-
 
 ## How I can get best sample?
 
