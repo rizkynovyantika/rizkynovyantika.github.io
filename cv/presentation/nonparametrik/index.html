@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Statistika Nonparametrik – Uji Tanda. Uji Wilcoxon. Uji McNemar</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Rizky Dwi Novyantika">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../assets/css/reveal.css">
+		<link rel="stylesheet" href="../assets/css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../assets/lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../assets/css/print/pdf.css' : '../assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>
+				<font color="#C1250F">Statistika Nonparametrik</font></h1>
+				<h3>Uji Tanda. Uji Wilcoxon. Uji McNemar</h3>
+				<p>
+					<small>Created by <a href="http://rizkynovyantika.github.io">Rizky Dwi Novyantika</a> / <a href="http://twitter.com/rdnovyantika">@rdnovyantika</a></small>
+				</p>
+			</section>
+			<section>
+				<h2>
+				<font color="#C1250F">Nama Anggota Kelompok</font>
+				</h2>
+				<ol style="width:380px;">
+					<li>Rizky Dwi Novyantika</li>
+					<li>Hadi Putra</li>
+					<li>Rima Juridar Usfita Sari</li>
+					<li>Mita Raehanun</li>
+					<li>Sulhaerati</li>
+					<li>Noor Asyiah</li>
+					<li>Yayan Dwi Septian</li>
+					<li>Achmad Isya Al Fassa</li>
+					<li>Adwi Guntur Prasetyo</li>
+					<li>Andre Pratama</li>
+				</ol>
+			</section>
+			<!-- Vertical Content-->
+			<section>
+				<h2>
+				<font color="#C1250F">Uji Dua Sampel Dependen</font>
+				</h2>
+				<hr class="hr-short"/>
+				<p class="fragment fade-up" align="justify">Uji Dua Sampel Berpasangan artinya sampel dengan subjek yang sama namun mengalami dua perlakuan atau pengukuran yang berbeda. Kapan menggunakan uji dependent?</p>
+					<ol class="fragment fade-up">
+						<li>Satu sampel (setiap elemen mempunyai 2 nilai pengamatan)</li>
+						<li>Merupakan data kuantitatif.</li>
+						<li>Berasal dari populasi dengan distribusi normal.</li>
+					</ol>
+			</section>
+			<section>
+			<!--pengertian uji tanda-->
+				<section>
+					<h2>
+					<font color="#C1250F">Uji Tanda</font>
+					</h2>
+					<hr class="hr-short"/>
+					<p class="fragment fade-up" align="justify">Uji tanda adalah Uji yang digunakan untuk menguji dua kelompok data yang berpasangan</p>
+						<ul class="fragment fade-up">
+							<li>Uji tanda digunakan ketika asumsi normal tidak terpenuhi</li>
+							<li>Ukuran sampel kecil</li>
+							<li>Skala data yang digunakan bersifat ordinal</li>
+							<li>Asumsinya adalah distribusinya bersifat binomial</li>
+						</ul>
+				</section>
+				<!--Contoh 1 uji tanda-->
+				<section>
+					<h2>
+					<font color="#C1250F">Contoh 1 Uji Tanda</font>
+					</h2>
+					<hr class="hr-short" />
+					<p align="justify">Sebuah percobaan untuk menentukan perbandingan kenyamanan 2 jenis mobil (mobil Eropa dan Amerika) dengan 30 orang mengendarai secara terpisah. Setiap 30 orang tersebut ditanyai mengenai kenyamanan mobil yang dikendarainya dengan 5 kriteria yaitu :</p>
+						<ol>
+							<li>Sangat Tidak Nyaman</li>
+							<li>Tidak Nyaman</li>
+							<li>Sedang</li>
+							<li>Nyaman</li>
+							<li>Sangat Nyaman</li>
+						</ol>
+				</section>
+				<section>
+					<p>Berikut ini adalah Data dari contoh 1 Uji Tanda</p>
+					<a href="images/ujitanda1.png" id="single_image"><img src="images/ujitanda1.png" width="280" height="280"></a>
+				</section>
+				<section>
+					<ol>
+						<li><b>Hipotesis</b></li>
+							<ul>
+							<li> H<sub>0</sub> : Kenyamanan kedua mobil sama </li>
+							<li> H<sub>1</sub> : Mobil eropa lebih nyaman dibandingkan mobil Amerika</li>
+							</ul>
+						<li><b>Tingkat signifikansi</b></li>
+							<p>α= 0,05 ; Z<sub>α</sub> = 1,645 </p>
+						<li><b>Statistik Uji</b></li>
+							<p>
+							<p>Z<sub>h</sub>= ((x ± 0,5) – np)/√(np (1-p))</p>
+							<p>= ((21 ± 0,5)–(27)(0,5))/√27.0,5.0,5</p>
+							<p>= 2,69 </p>
+							</p>
+				</section>
+				<section>
+					<p align="left"><b>4. Keputusan</b></p>
+					<p align="left">Karena Z<sub>h</sub> > Z<sub>α</sub> maka <mark>&nbsp;&nbsp;tolak H<sub>0</sub>&nbsp;&nbsp;</mark></p>
+					<p align="left"><b>5. Kesimpulan</b></p>
+					<p align="left">Dengan tingkat signifikansi 5% didapatkan kesimpulan bahwa mobil eropa lebih nyaman dibandingkan dengan mobil amerika.</p>
+				</section>
+				<!--Contoh 2 Uji tanda-->
+				<section>
+					<h2>
+					<font color="#C1250F">Contoh 2 Uji Tanda</font>
+					</h2>
+					<hr class="hr-short" />
+					<p align="justify">Diketahui bahwa <i>ponds day cream</i> untuk memutihkan wajah mempunyai Median (Me) waktu penyembuhan 7 hari. Bila <i>ponds day cream</i> dikombinasi dengan <i>ponds night cream</i> apakah dapat mempercepat waktu pemutihan? Untuk mengetahui hal ini maka kombinasi <i>ponds day cream</i> dan <i>ponds night cream</i> diberikan pada 11 orang. Pengujian hipotesis dilaukan pada derajat kepercayaan 95%</p>
+					</section>
+					<section>
+						<p>Berikut ini adalah Data dari contoh 2 Uji Tanda</p>
+						<a href="images/ujitanda2.JPG" id="single_image"><img src="images/ujitanda2.JPG" width="280" height="280"></a>
+					</section>
+					<section>
+						<ol>
+						<li><b>Hipotesis</b></li>
+							<ul>
+							<li> H<sub>0</sub> : Median populasi = Median sampel (median waktu pemutihan kombinasi <i>ponds day cream</i> dan <i>ponds night cream</i> = 7 hari) </li>
+							<li> H<sub>1</sub> : Median populasi ≠ Median sampel </li>
+							</ul>
+						<li><b>Tingkat signifikansi</b></li>
+							<p>α= 0,05</p>
+						<li><b>Statistik Uji</b></li>
+							<p>H<sub>0</sub> ditolak jika kombinasi ponds (D+N) berbeda secara bermakna dibandingkan obat A atau dengan kata lain untuk menolak H<sub>0</sub> maka jumlah tanda (-) harus = 1</p>
+					</section>
+					<section>
+					<p align="left">4. Keputusan</p>
+					<p align="left">Dari hasil pengamatan diperoleh 2 orang dengan tanda (-) maka kita <mark>&nbsp;&nbsp;Gagal tolak H<sub>0</sub>&nbsp;&nbsp;</mark></p>
+					<p align="left">5. Kesimpulan</p>
+					<p align="left">Dengan tingkat signifikansi 5% didapatkan kesimpulan bahwa Tidak terdapat perbedaan efek <i>ponds day cream</i> tidak dengan kombinasi <i>ponds Day Night</i>.</p>
+					</section>
+				</section>
+				<!--Uji Wilcoxon-->
+				<section>
+					<section>
+						<h2>
+						<font color="#C1250F">Uji Wilcoxon</font>
+						<hr class="hr-short" />
+						</h2>
+						<p class="fragment fade-up" align="justify">Uji Wilcoxon merupakan uji yang digunakan untuk menentukan ada tidaknya perbedaan rata-rata dua sampel yang saling berhubungan(Dependen).</p>
+						<ul class="fragment fade-up" align="justify">
+							<li>Menggunakan data berpasangan dan berasal dari populasi yang sama</li>
+							<li>Setiap pasangan dipilih secara acak</li>
+							<li>Skala pengukurannya minimal ordinal.</li>
+						</ul>
+					</section>
+					<!--contoh 1 uji wilcoxon-->
+					<!--contoh 2 uji wilcoxon-->
+					<section>
+						<h2>
+						<font color="#C1250F">Contoh 1 Uji Wilcoxon</font>
+						</h2>
+						<hr class="hr-short" />
+						<p align="justify">Pada suatu kantor pemerintah dilakukan penelitian untuk mengetahui pengaruh ruangan yang diberi AC terhadap produktivitas kerja. Pengumpulan data terhadap produktivitas kerja pegawai dilakukan pada waktu sebelum AC dipasang (Xa) dan sesudah dipasang (Xb). Dengan 10 pegawai yang dipilih secara random</p>
+					</section>
+					<section>
+						<p>Berikut ini adalah Data dari contoh 2 Uji Wilcoxon</p>
+						<a href="images/ujiwilcoxon3.JPG" id="single_image"><img src="images/ujiwilcoxon3.JPG" width="280" height="280"></a>
+					</section>
+					<section>
+						<ol>
+						<li><b>Hipotesis</b></li>
+							<ul>
+							<li>H<sub>0</sub> : Tidak terdapat perbedaan produktivitas kerja pegawai sebelum dan sesudah memakai AC</li>
+							<li>H<sub>1</sub> : Terdapat perbedaan produktivitas kerja pegawai sebelum dan sesudah memakai AC</li>
+							</ul>
+						<li><b>Tingkat signifikansi</b></li>
+						<p>α= 0,05</p>
+						<li><b>Statistik Uji</b></li>
+						<p>H<sub>0</sub> diterima bila harga jumlah jenjang yang terkecil T<sub>hit</sub> > T<sub>tabel</sub></p>
+					</section>
+					<section>
+					<p align="left"><b>4. Keputusan</b></p>
+					<p align="left"><mark>&nbsp;&nbsp;Gagal tolak H<sub>0</sub>&nbsp;&nbsp;</mark>karena T<sub>hit</sub>=18,5 > T<sub>tabel</sub>=8</p>
+					<p align="left">5. <b>Kesimpulan</b></p>
+					<p align="left">Dengan tingkat signifikansi 5% didapatkan kesimpulan bahwa ruangan kerja yang diberi AC tidak mempunyai pengaruh yang signifikan terhadap produktivitas kerja pegawai</p>
+					</section>
+					<!--contoh 2 uji wilcoxon-->
+					<section>
+						<h2>
+						<font color="#C1250F">Contoh 2 Uji Wilcoxon</font>
+						</h2>
+						<hr class="hr-short" />
+						<p align="justify">Seorang dokter ingin melakukan penelitian ingin melihat pengaruh dari suatu obat. 8 orang pasien yang diambil secara acak diukur kapasitas pernapasannya sebelum dan sesudah diberikan obat tertentu</p>
+					</section>
+					<section>
+						<p>Berikut ini adalah Data dari contoh 3 Uji Wilcoxon</p>
+						<a href="images/ujiwilcoxon2.JPG" id="single_image"><img src="images/ujiwilcoxon2.JPG" width="280" height="280"></a>
+					</section>
+					<section>
+						<ol>
+						<li><b>Hipotesis</b></li>
+							<ul>
+							<li>H<sub>0</sub> : Tidak ada perbedaan sebelum dan sesudah menggunakan obat</li>
+							<li>H<sub>1</sub> : Ada perbedaaan sebelum dan sesudah menggunakan obat</li>
+							</ul>
+						<li><b>Tingkat signifikansi</b></li>
+						<p>α= 0,05 dengan n=8</p>
+						<p>tabel wilcoxon T = 3. (diperoleh dari tabel wilcoxon)</p>
+						<li><b>Statistik Uji</b></li>
+						<p>H<sub>0</sub> diterima apabila nilai uji statistik  ≥ dari t <sub>tabel</sub> yaitu 3</p>
+						<p>H<sub>0</sub> ditolak apabila nilai uji statistik < dari t <sub>tabel</sub> yaitu 3</p>
+					</section>
+					<section>
+					<p align="left">4. <b>Keputusan</b></p>
+						<p align="left">Untuk tanda positif: 2,5 +5,5 +1 = 9</p>
+						<p align="left">Untuk tanda negatif 8 + 2,5 + 4 + 7 +5,5 = 27</p>
+						<p align="justify">Untuk melihat nilai uji statistiknya yaitu dari nilai terkecil dari nilai tersebut yaitu tanda positif 9. sehingga nilai statistiknya 9. Berdasarkan hasil tersebut diperoleh hasil bahwa nilai uji statistik  ≥ dari t<sub>tabel</sub> yaitu 9  ≥ 3. sehingga berdasarkan kriteria pengujian diperoleh hasil <mark>&nbsp;&nbsp; Gagal tolak H<sub>0</sub> &nbsp;&nbsp;</mark> </p>
+					</section>
+					<section>
+						<p align="left">5. <b>Kesimpulan</b></p>
+						<p align="left">Dengan tingkat signifikansi 5% didapatkan kesimpulan bahwa tidak ada perbedaan sebelum dan sesudah menggunakan obat</p>
+					</section>
+				</section>
+				<!--Uji McNemar-->
+				<section>
+					<section>
+						<h2>
+						<font color="#C1250F">Uji McNemar</font>
+						</h2>
+						<hr class="hr-short" />
+						<p class="fragment fade-up" align="justify">Uji Mcnemar merupakan uji yang dapat digunakan untuk rancangan <i>Pre</i> dan <i>Post test</i>, dimana setiap individu digunakan sebagai pengontrol dirinya sendiri. Kekuatan pengukurannya adalah skala nominal atau ordinal. Uji ini misalnya dapat dipakai untuk menguji keefektifan suatu perlakuakn tertentu terhadap kecenderungan pilihan para pemilih.	</p>
+					</section>
+					<section>
+						<h2>
+						<font color="#C1250F">Contoh 1 Uji Mcnemar</font>
+						</h2>
+						<hr class="hr-short" />
+						<p align="justify">Diambil sampel 22 orang laki-laki dewasa untuk dilakukan pengukuran terhadap tekanan nadi. Mereka diminta untuk melakukan dengan cara melakukan olahraga ringan dengan;
+						<p align="left">Kode 1 = tekanan nadi normal = 70-80x/menit </p>
+						<p align="left">Kode 2 = tekanan nadi  tidak normal (>80) </p>
+						<p align="justify">Data di ambil sebelum dan sesudah dilakukan olahraga. Ingin diketahui apakah terdapat perbedaan atau perubahan tekanan nadi setelah dilakukan olahraga</p>
+					</section>
+					<section>
+						<p>Berikut ini adalah Data dari contoh 1 Uji Mcnemar</p>
+						<a href="images/ujimcnemar1.JPG" id="single_image"><img src="images/ujimcnemar1.JPG" width="280" height="280"></a>
+					</section>
+					<section>
+						<ol>
+						<li><b>Hipotesis</b></li>
+							<ul>
+							<li>H<sub>0</sub> : Tidak ada perbedaan tekanan nadi sebelum dan sesudah melakukan olahraga ringan</li>
+							<li>H<sub>1</sub> : Ada perbedaaan tekanan nadi sebelum dan sesudah melakukan olahraga ringan</li>
+							</ul>
+						<li><b>Tingkat signifikansi</b></li>
+						<p>α = 5% (0,05)</p>
+						<li><b>Statistik Uji</b></li>
+						<p>H<sub>0</sub> diterima apabila nilai uji statistik  ≥ dari t<sub>tabel</sub></p>
+						<p>H<sub>0</sub> ditolak apabila nilai uji statistik < dari t<sub>tabel</sub></p>
+						</section>
+					<section>
+						<p align="left">4. <b>Keputusan</b></p>
+						<p align="left">Diperoleh nilai Khi<sup>2</sup> tabel = 3,84. Karena Khi<sup>2</sup> hitung < nilai Khi<sup>2</sup> tabel 8,06 > 3,84, maka <mark>H<sub>0</sub> ditolak</mark></p>
+						<p align="left">5. <b>Kesimpulan</b></p>
+						<p align="left">Dengan tingkat signifikansi 5% didapatkan kesimpulan bahwa ada perbedaan tekanan nadi antara sebelum dan sesudah olahraga (olah raga berpengaruh terhadap perubahan tekanan nadi)</p>
+					</section>
+					<section>
+						<h2>
+						<font color="#C1250F">Contoh 2 Uji Mcnemar</font>
+						</h2>
+						<hr class="hr-short" />
+						<p align="justify">Psikolog ingin mengobservasi 25 anak yang baru masuk pada setiap hari pertama masing-masing anak itu masuk pra-TK untuk meramalkan keterbiasaan dan pengalaman anak-anak apakah semakin banyak memulai hubungan sosial dengan orang dewasa atau anak-anak lainnya sehingga untuk menguji hipotesis ini, Dia mengkategorikan pendekatan pertama yang dilakukan oleh anak-anak dalam hubungan sosial mereka apakah hubungan itu ditujukan kepada orang dewasa atau anak-anak lain dengan mengobsercvasi anak tersebut setelah bersekolah di pra-TK selama sebulan</p>
+					</section>
+					<section>
+						<p>Berikut ini adalah Data dari contoh 3 Uji Mcnemar</p>
+						<a href="images/ujimcnemar3.JPG" id="single_image"><img src="images/ujimcnemar3.JPG" width="280" height="280"></a>
+					</section>
+					<section>
+						<ol>
+						<li><b>Hipotesis</b></li>
+							<ul>
+							<li>H<sub>0</sub> : Anak-anak yang berubah, kemungkinan bahwa seorang anak akan mengubah obyek pendekatan awalnya dari dewasa ke Anak-kanak adalah sama dengan kemungkinan bahwa dia akan mengubah obyek itu dari anak-anak ke dewasa. PA=PD=1/2</li>
+							<li>H<sub>1</sub> : PA>PD</li>
+							</ul>
+						<li><b>Tingkat signifikansi</b></li>
+						<p>α = 5% (0,05)</p>
+						<li><b>Statistik Uji</b></li>
+						<p>H<sub>0</sub> akan ditolak jika Khi<sup>2</sup>-hitung > Khi<sup>2</sup>-tabel. (Bisa juga digunakan <i>p-value</i>)</p>
+					</section>
+					<section>
+						<p align="left">4. <b>Keputusan</b></p>
+						<p align="left">Karena Khi<sup>2</sup>-hitung > 3,84 maka <mark>H<sub>0</sub> ditolak</mark></p>
+						<p align="left">5. <b>Kesimpulan</b></p>
+						<p align="left">Dengan tingkat signifikansi 5% didapatkan kesimpulan bahwa anak-anak menunjukkan kecenderungan mengubah obyek pendekatan awal mereka dari dewasa ke anak-anak setelah mendapatkan pengalaman 30 hari di sekolah pra-TK</p>
+					</section>
+				</section>
+				<section style="text-align: left;">
+					<h1 align="center">THANK YOU :) </h1>
+				</section>
+			</div>
+		</div>
+		<script src="../assets/lib/js/head.min.js"></script>
+		<script src="../assets/js/reveal.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.easing-1.3.pack.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.mousewheel-3.0.4.pack.js"></script>
+		<script>
+			$(document).ready(function() {
+				/* This is basic - uses default settings */
+				$("a#single_image").fancybox();
+				/* Apply fancybox to multiple items */
+				$("a.group").fancybox({
+					'transitionIn'	:	'elastic',
+					'transitionOut'	:	'elastic',
+					'speedIn'		:	600,
+					'speedOut'		:	200,
+					'overlayShow'	:	false
+				});
+			});
+		</script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../assets/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

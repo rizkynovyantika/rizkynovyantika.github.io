@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>BAB III</title>
+<link rel="alternate" type="application/rss+xml" title="arlinadesign.blogspot.com" href="feed/index.html">
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,600,500,400,300" rel="stylesheet" type="text/css">
+<link href='http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'/>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/prettify.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Landasan Teori</h2>
+    <p style="font-size: 1.4em;
+    text-shadow: 0px 1px 1px #333333;">Analisis Hubungan Kasus Korupsi dengan Ketimpangan Pendapatan Masyarakat Provinsi Jawa Barat pada Tahun 2010-2015 Menggunakan Regresi Data Panel</p>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Landasan Teori</strong></li>
+      <li><a href="#Latar_Belakang" class=" ">Pengertian Korupsi</a></li>
+	    <li><a href="#Rumusan" class=" ">Pengertian Indeks Gini</a></li>
+      <li><a href="#Batasan" class=" ">Pengertian Data Panel dan Regresi</a></li>
+      <li><a href="#Manfaat" class=" ">Model Estimasi Data Panel</a></li>
+      <li><a href="#Teknik" class=" ">Teknik Estimasi Data Panel</a></li>
+      <li class="separator"></li>
+    </ul>
+    <div class="docs-content">
+      <h2>Landasan Teori</h2>
+      <h3 id="Latar_Belakang">Pengertian Korupsi</h3>
+      <p align="justify">Mahzar menandaskan istilah korupsi secara umum sebagai "berbagai tindakan gelap dan tidak sah (Illicit or illegal activities) untuk mendapatkan keuntungan pribadi atau kelompok. Mahzar menambahkan, bahwa dalam perkembangan lebih akhir, dari beragam pengertian korupsi, terdapat penekanan yang dilakukan sejumlah ahli dalam mendefinisikan korupsi, yakni enyalahgunaan kekuasaan atau kedudukan publik untuk kepentingan pribadi".</p>
+      <p align="justify"> Dalam UU No.31 Tahun 19993, Pengertian korupsi yaitu setiap orang yang dengan sengaja secara melawan hukum untuk melakukan perbuatan dengan tujuan memperkaya diri sendiri atau orang lain atau suatu korporasi yang mengakibatkan kerugian keuangan negara atau perekonomian negara.</p>
+      <h3 id="Rumusan">Pengertian Indeks Gini</h3>
+      <p> Indeks Gini merupakan ukuran yang menunjukan secara kuantitatif derajat pembagian pendapatan.  Indeks gini merupakan suatu angka yang menunjukan ketidakmerataan dalam distribusi pendapatan yang dihitung dari Kurva Lorenz. (Gilarso, T. 2003)</p>
+      <h3 id="Batasan">Pengertian Data Panel dan Regresi</h3>
+      <p>Data panel adalah gabungan antara data runtut waktu (time series) dan data silang (cross section). Pada data time series, satu atau lebih variabel akan diamati pada satu unit observasi dalam kurun waktu tertentu. Sedangkan data cross-section merupakan amatan dari beberapa unit observasi dalam satu titik waktu. Data panel merupakan data dari beberapa individu sama yang diamati dalam kurun waktu tertentu. Jika kita memiliki T periode waktu (t = 1,2,…,T) dan N jumlah individu (i = 1,2,…,N), maka dengan data panel kita akan memiliki total unit observasi sebanyak NT. Jika jumlah unit waktu sama untuk setiap individu, maka data disebut balanced panel. Jika sebaliknya, yakni jumlah unit waktu berbeda untuk setiap individu, maka disebut unbalanced panel.Misalkan anda sebagai seorang peneliti ingin meneliti bank Mandiri dalam kurun waktu 2000-2013 maka anda melakukan penelitian menggunakan data time series.</p>
+      <p>Regresi Data Panel adalah model probabilistik yang menyatakan hubungan linier antara dua variabel dimana dimana variabel tersebut berupa data runtun waktu dan dalat silang dimana salah satu variabel dianggap mempengaruhi variabel yang lain. Variabel yang memengaruhi dinamakan variabel independen dan variabel yang memengaruhi dinamakan variabel dependen. </p>
+      <h3 id="Manfaat">Model Estimasi Data Panel</h3>
+      <p>Dalam metode estimasi model regresi dengan menggunakan data panel dapat dilakukan melalui tiga pendekatan, antara lain:</p>
+      <ol>
+        <li align="justify">1. Common Effect Model atau Pooled Least Square (PLS)</br>
+        Merupakan pendekatan model data panel yang paling sederhana karena hanya mengkombinasikan data time series dan cross section. Pada model ini tidak diperhatikan dimensi waktu maupun individu, sehingga diasumsikan bahwa perilaku data perusahaan sama dalam berbagai kurun waktu. Metode ini bisa menggunakan pendekatan Ordinary Least Square (OLS) atau teknik kuadrat terkecil untuk mengestimasi model data panel.</li>
+        <li align="justify">Fixed Effect Model (FE)</br>
+        Model ini mengasumsikan bahwa perbedaan antar individu dapat diakomodasi dari perbedaan intersepnya. Untuk mengestimasi data panel model Fixed Effects menggunakan teknik variable dummy untuk menangkap perbedaan intersep antar perusahaan, perbedaan intersep bisa terjadi karena perbedaan budaya kerja, manajerial, dan insentif. Namun demikian slopnya sama antar perusahaan. Model estimasi ini sering juga disebut dengan teknik Least Squares Dummy Variable (LSDV).</li>
+        <li align="justify">Random Effect Model (RE)</br>
+        Model ini akan mengestimasi data panel dimana variabel gangguan  mungkin saling berhubungan antar waktu dan antar individu. Pada model Random Effect perbedaan intersep diakomodasi oleh error terms masing-masing perusahaan. Keuntungan menggunakan model Random Effect yakni menghilangkan heteroskedastisitas. Model ini juga disebut dengan Error Component Model (ECM) atau teknik Generalized Least Square (GLS).</li>
+      </ol>
+      <h3 id="Teknik">Teknik Estimasi Data Panel</h3>
+      <p>Untuk memilih model yang paling tepat terdapat beberapa pengujian yang dapat dilakukan, antara lain:</p>
+      <ol>
+      <li>Uji Chow</br>
+      Uji Chow adalah pengujian untuk menentukan model Fixed Effect atau Random Effect yang paling tepat digunakan dalam mengestimasi data panel. Bentuk hipotesis dari Uji Chow adalah sebagai berikut :</br>
+      H0: Pilih Comon Effect Model</br>
+      H1: Pilih Fixed Effect</li>
+      <li>Uji Hausman</br>
+      Hausman test adalah pengujian statistik untuk memilih apakah model Fixed Effect atau Random Effect yang paling tepat digunakan. Bentuk hipotesis dari Uji Hausman adalah sebagai berikut :</br>
+      H0: Pilih Random Effect</br>
+      H1: Pilih Fixed Effect</li>
+      <li>Uji Lagrange Multiplier</br>
+      Uji Lagrange Multiplier (LM) adalah uji untuk mengetahui apakah model Random Effect lebih baik daripada metode Common Effect (OLS) digunakan.
+      Bentuk hipotesis dari Uji Lagrange Multiplier adalah sebagai berikut :</br>
+      H0: Pilih Comon Effect Model</br>
+      H1: Pilih Random Effect </li>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Copyright 2017 - Rizky Dwi Novyantika</h4>
+    <h3><a href="https://rizkynovyantika.github.io/laporan-kp">Next page</a></h3>
+  </div>
+</section>
+<a class="totop" href="#">Top</a>
+
+<script src="assets/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="assets/js/prettify/prettify.js"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script src="assets/js/layout.js"></script>
+ <script src="assets/js/jquery.localscroll-1.2.7.js" type="text/javascript"></script>
+ <script src="assets/js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
+ <script src="assets/js/top.js" type="text/javascript"></script>
+</body>
+</html>
