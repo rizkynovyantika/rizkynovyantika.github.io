@@ -8,7 +8,7 @@ canonifyurls    = true
 
 [params]
   title       = "Hugo Casper Two"
-  subtitle    = "Port of Casper 2.x for Hugo"
+  subtitle    = "All I know, I share with you"
   copyright   = "© 2018"
 
   cover       = "img/blog-cover.jpg"
@@ -18,11 +18,11 @@ canonifyurls    = true
   customCSS = []
   RSSLink = ""
 
-  twitterName = "faketryghost"
-  fbName = "fakeghost"
+  twitterName = "rdnovyantika"
+  fbName = "Rizky D. Novyantika"
   githubName = "rizkynovyantika"
-  linkedinName = "eueung"
-  mediumName = ""
+  linkedinName = "Rizky Dwi Novyantika"
+  mediumName = "rizkynovyantika"
 
   logo = "hugo-logo.png"
   orgName = "EM"
@@ -33,8 +33,8 @@ canonifyurls    = true
 
   author = "EM"
   authorAvatar = "img/ghost-icon.png"
-  authorLocation = "Bandung, ID"
-  authorWebsite = "https://eueung.github.io"
+  authorLocation = "Yogyakarta, ID"
+  authorWebsite = "https://rizkynovyantika.github.io"
   authorDescription = "Your description here"
 
   pageNotFoundTitle = "404 - Page not found"
@@ -64,5 +64,3 @@ canonifyurls    = true
   name = "External"
   url = "https://google.com/"
   weight = 95
-
-

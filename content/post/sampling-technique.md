@@ -12,14 +12,14 @@ tags: [stats, math, computer]
 linktitle: "Sampling Technique"
 nomenu: "main"
 noweight: 10
-image: "img/writing.jpg"
+image: "img/sampling-2.jpg"
 next: ""
 prev: ""
 ---
 
 # Sampling Technique
 
-Before you read this article, I recommended you to read ![this](https://rizkynovyantika.github.io/post/how-can-i-get-best-sample/).
+Before you read this article, I recommended you to read [this](https://rizkynovyantika.github.io/post/how-can-i-get-best-sample/).
 
 ![Sampling Technique](/images/sampling-technique/1.png)
 
@@ -44,6 +44,7 @@ Pegambilan sampel dengan teknik ini dilakukan secara random dengan 2 cara yang t
 * Tentukan skema penggunaan label random numbers
 
 **Keuntungan** : Prosedur estimasi m udah dan sederhana.
+
 **Kerugian** : Membutuhkan daftar seluruh anggota populasi dan sampel mungkin tersebar pada daerah yang luas, sehingga biaya transportasi besar.
 
 ### Systematic Random Sampling
@@ -54,6 +55,7 @@ Pegambilan sampel dengan teknik ini dilakukan secara random dengan 2 cara yang t
 Teknik pengambilan sampel ini digunakan apabila sedikit stratifikasi pada populasi. Secara umum, teknik ini dilakukan dengan pengambilan sampel dengan setiap urutan ke-K dari titik awal yang dipilih secara random, dimana nilai K adalah pembagian dari jumlah anggota populasi dengan jumlah anggota sampel.
 
 **Keuntungan** : Perencanan dan penggunaanya mudah dan sampel tersebar di daerah populasi
+
 **Kerugian** : Membutuhkan daftar populasi.
 
 ### Stratified Random Sampling
@@ -66,6 +68,7 @@ Misalnya kita meneliti keadaan gizi anak sekolah Taman Kanak-kanak di Kota Madya
 Cara pengambilan sampel 5 Kelompok A, 12–13 Kelompok B, dan 7 ñ 8. Kelompok C adalah secara random karena sub populasi sudah homogen.
 
 **Keuntungan** : Taksiran mengenai karakteristik populasi lebih tepat.
+
 **Kerugian** : Daftar populasi setiap strata diperlukan , jika daerah geografisnya luas, biaya transportasi tinggi.
 
 ### Cluster Sampling
@@ -77,27 +80,30 @@ Teknik cluster sampling digunakan apabila populasi dibagi dalam kelompok-kelompo
 Misalnya ingin meneliti gambaran karakteristik (umur, suku, pendidikan dan pekerjaan) orang tua mahasiswa FK USU. Mahasiswa FK dibagi dalam 6 tingkat (I s/d VI). Pilih secara random salah satu tingkat (misal tingkat II). Maka orang tua sem ua mahasiswa yang berada pada tingkat II diambil sebagai sampel (Cluster).
 
 **Keuntungan** : Tidak memerlukan daftar populasi dan biaya transportasi kurang
+
 **Kerugian** : Prosedur estimasi sulit
 
 ### Multi Stage Sampling
-![](/images/sampling-technique/6.png)
+![Multi Stage Sampling](/images/sampling-technique/6.png)
 
 Proses pengambilan sampel dilakukan bertingkat, baik bertingkat dua maupun lebih.
 
 Misalnya kita ingin meneliti Berat badan dan Tinggi badan murid SMA. Sesuai kondisi dan perhitungan, maka jumlah sampel yang akan diambil ± 2000.
 
-![](/images/sampling-technique/7.png)
+![Multi Stage Sampling](/images/sampling-technique/7.png)
 
 Cara ini dipergunakan bila:
+
 * Populasinya cukup homogen
 * Jumlah populasi sangat besar
 * Populasi menempati daerah yang sangat luas
 * Biaya penelitian kecil
 
 **Keuntungan** : Biaya transportasi kurang
-**Kerugian** : Prosedur estimasi sulit , Prosedur pengambilan sampel memerlukan perencanaan yang lebih cermat
 
----
+**Kerugian** : Prosedur estimasi sulit, Prosedur pengambilan sampel memerlukan perencanaan yang lebih cermat
+
+
 
 ## Probability Sampling
 Teknik sampling nonprobabilitas adalah teknik pengambilan sample yang ditemukan atau ditentukan sendiri oleh peneliti atau menurut pertimbangan pakar.

@@ -12,7 +12,7 @@ tags: []
 linktitle: "How Can I Get Best Sample"
 nomenu: "main"
 noweight: 10
-image: "img/writing.jpg"
+image: "img/sampling-1.jpg"
 next: ""
 prev: ""
 ---
