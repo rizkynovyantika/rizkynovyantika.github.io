@@ -2,7 +2,7 @@
 author: "Rizky D. Novyantika"
 authorAvatar: "/img/avatar.png"
 date: 2018-02-26T13:19:28+07:00
-title: "Sampling Technique"
+title: "Public Suggest: How to Get Job"
 description: ""
 draft: false
 
@@ -12,12 +12,10 @@ tags: [stats, math, computer]
 linktitle: "Public Suggest: How to Get Job"
 nomenu: "main"
 noweight: 10
-image: "img/sampling-2.jpg"
+image: "img/job-1.jpg"
 next: ""
 prev: ""
 ---
-
-# Public Suggest: How to Get Job
 
 Lulusan perguruan tinggi Indonesia sedang mengalami dilema, sebab gelar ijazah pendidikan tinggi yang mereka raih tak lagi jadi jaminan mudah untuk mendapat pekerjaan. Kesulitan mereka terserap dunia kerja semakin bertambah berat, karena mulai 1 Januari 2016 mereka juga bersaing dengan tenaga kerja asing dari negara-negara ASEAN sebagai dampak berlakunya Masyarakat Ekonomi Asean (MEA). Sulitnya lulusan universitas lokal memperoleh pekerjaan sudah terlihat dari angka pengangguran terdidik Indonesia yang meningkat setiap tahun. Berdasarkan data Badan Pusat Statistik (BPS) pada Agustus 2014, di Indonesia ada 9,5 persen (688.660 orang) dari total penganggur yang merupakan alumni perguruan tinggi.
 
