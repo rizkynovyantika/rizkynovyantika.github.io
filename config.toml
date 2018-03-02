@@ -7,7 +7,7 @@ paginate        = 6
 canonifyurls    = true
 
 [params]
-  title       = "Hugo Casper Two"
+  title       = "Rizky D. Novyantika"
   subtitle    = "All I know, I share with you"
   copyright   = "© 2018"
 
@@ -19,7 +19,7 @@ canonifyurls    = true
   RSSLink = ""
 
   twitterName = "rdnovyantika"
-  fbName = "Rizky D. Novyantika"
+  fbName = "rizky.novyantika"
   githubName = "rizkynovyantika"
   linkedinName = "Rizky Dwi Novyantika"
   mediumName = "rizkynovyantika"
