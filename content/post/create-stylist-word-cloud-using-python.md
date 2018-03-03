@@ -12,7 +12,7 @@ tags: [stats, math, computer]
 linktitle: "How to Create Stylist Word Cloud Using Python"
 nomenu: "main"
 noweight: 10
-image: "img/sampling-2.jpg"
+image: "img/cloud.png"
 next: ""
 prev: ""
 ---
@@ -32,6 +32,7 @@ To create word cloud, you can use the data obtained from my research by download
 5. Styling Word CLoud (optional)
 
 ## Remove unused words
+
 Data teks, biasanya terdapat kata yang tidak penting untuk dilakukan pembuatan word cloud oleh karena itu diperlukan syntax untuk melakukan penghapusan kata yang tidak digunakan. 
 
 ```python
@@ -54,6 +55,7 @@ fout.close()
 infile.txt merupakan data teks yang asli sebelum dihapus kata yang tidak akan digunakan dalam word cloud. sedangkan outfile.txt merupaka data teks hasil dari menghapus kata yang tidak digunakan dalam word cloud.
 
 ## Replace words
+
 Sebuah teks yang diperoleh dari saran seseorang akan menghasilkan kata yang berbeda akan tetapi memiliki arti yang sama. sehingga untuk memperhemat pembendaharaan kata dalam word cloud diperlukan mengganti kata yang berbeda dengan arti kata yang sama dengan menjadikannya satu kata yang sama.
 
 ```python
@@ -68,6 +70,7 @@ with open('/folder/outfile.txt', 'w') as file:
 
 
 ## Counting the frequency of words
+
 Untuk mengetahui masing-masing jumlah kata yang sering muncul dalam saran yang diberikan pada data teks kita dapat menggunakan syntax seperti dibawah ini :
 
 ```python
@@ -92,7 +95,7 @@ for words in frequency_list:
 
 Berikut ini adalah gambar hasil dari perhitungan kata dalam data teks.
 
-![](images/create-stylist-word-cloud-using-python/1.png)
+![Word Cloud](/images/create-stylist-word-cloud-using-python/1.png)
 
 ## Creating Word Cloud
 Nah, ini dia tahap inti dari artikel ini yaitu pembuatan word cloud.
@@ -120,13 +123,13 @@ plt.show()
 ```
 Berikut ini adalah gambar hasil word cloud data teks.
 
-![](images/create-stylist-word-cloud-using-python/2.png)
+![Word Cloud](/images/create-stylist-word-cloud-using-python/2.png)
 
 
 ## Styling Word Cloud
 Untuk membuat word cloud menjadi lebih menarik, kita dapat mengubah word cloud tersebut dengan berbagai bentuk yang kita inginkan. Dalam hal ini saya ingin membuat word cloud dengan tema pekerjaan. Dengan gambar asli seperti dibawah ini :
 
-![](images/create-stylist-word-cloud-using-python/3.png)
+![Word Cloud](/images/create-stylist-word-cloud-using-python/3.png)
  
 Berikut ini adalah syntax yang dapat digunakan untuk mengubah style dari word cloud.
 
@@ -170,9 +173,9 @@ plt.show()
 
 Output dari style word cloud yang dibuat menggunakan syntax diatas adalah sebagai berikut :
 
-![](images/create-stylist-word-cloud-using-python/4.png)
+![Word Cloud](/images/create-stylist-word-cloud-using-python/4.png)
 
 gambar tersebut dapat disimpan dengan menggunakan format .png 
 berikut ini adalah hasil dari styling word cloud yang telah dibuat.
 
-![](images/create-stylist-word-cloud-using-python/5.png)
+![Word Cloud](/images/create-stylist-word-cloud-using-python/5.png)
