@@ -12,24 +12,23 @@
     
     
     <item>
+      <title>How to Create Stylist Word Cloud Using Python</title>
+      <link>/post/how-to-create-stylist-word-cloud-using-python/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/how-to-create-stylist-word-cloud-using-python/</guid>
+      <description>What is Word Cloud? Word cloud atau disebut juga tag cloud adalah representasi visual dari data teks, biasanya digunakan untuk menggambarkan metadata keywords (tags) pada sebuah website/situs, untuk memvisualisasikan suatu bentuk teks secara bebas
+To create word cloud, you can use the data obtained from my research by downloading the data here.
+How to make Word Cloud in Python?  Remove unused words Replace words Counting the frequency of words (optional) Creating Word CLoud Styling Word CLoud (optional)  Remove unused words Data teks, biasanya terdapat kata yang tidak penting untuk dilakukan pembuatan word cloud oleh karena itu diperlukan syntax untuk melakukan penghapusan kata yang tidak digunakan.</description>
+    </item>
+    
+    <item>
       <title>Public Suggest: How to Get Job</title>
       <link>/post/public-suggest-how-to-get-job/</link>
       <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
       
       <guid>/post/public-suggest-how-to-get-job/</guid>
       <description>Lulusan perguruan tinggi Indonesia sedang mengalami dilema, sebab gelar ijazah pendidikan tinggi yang mereka raih tak lagi jadi jaminan mudah untuk mendapat pekerjaan. Kesulitan mereka terserap dunia kerja semakin bertambah berat, karena mulai 1 Januari 2016 mereka juga bersaing dengan tenaga kerja asing dari negara-negara ASEAN sebagai dampak berlakunya Masyarakat Ekonomi Asean (MEA). Sulitnya lulusan universitas lokal memperoleh pekerjaan sudah terlihat dari angka pengangguran terdidik Indonesia yang meningkat setiap tahun. Berdasarkan data Badan Pusat Statistik (BPS) pada Agustus 2014, di Indonesia ada 9,5 persen (688.</description>
-    </item>
-    
-    <item>
-      <title>Sampling Technique</title>
-      <link>/post/sampling-technique/</link>
-      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
-      
-      <guid>/post/sampling-technique/</guid>
-      <description>Sampling Technique Before you read this article, I recommended you to read this.
-Probability Sampling/Random Sampling Teknik pengambilan sampel dengan probability sampling adalah teknik sampel dengan memberikan kesempatan yang sama kepada seluruh anggota populasi untuk diambil sebagai sampel, contoh sederhananya adalah undian.
-Dalam probability sampling, terdapat beberapa teknik yang digunakan yaitu simple random sampling, systematic random sampling, stratified random sampling, cluster sampling dan multi stage sampling.
-Simple Random Sampling  Cara paling populer yang dipakai dalam proses penarikan sampel rambang sederhana adalah dengan undian.</description>
     </item>
     
     <item>
