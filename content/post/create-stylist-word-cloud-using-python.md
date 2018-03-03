@@ -12,7 +12,7 @@ tags: [stats, math, computer]
 linktitle: "How to Create Stylist Word Cloud Using Python"
 nomenu: "main"
 noweight: 10
-image: "img/cloud.png"
+image: "img/cloud.jpg"
 next: ""
 prev: ""
 ---
