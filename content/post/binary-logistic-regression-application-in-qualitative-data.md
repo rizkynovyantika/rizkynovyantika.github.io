@@ -36,6 +36,9 @@ Dalam melakukan analisis regresi logistik, dilakukan pengujian sebagai berikut :
 3. Koefisien Determinasi (R2)
 4. Pengujian Simultan (_Omnibus Test of Model Coefficient_)
 
+Sebelum masuk kedalam tahapan analisis dan test data, anda dapat mengunduh data yang akan digunakan dalam artikel ini [disini]()
+
+
 ### Menguji Kelayakan Model Regresi
 
 ### Menilai Keseluruhan Model (_Overall Model Fit Test_) 
