@@ -2,7 +2,7 @@
 author: "Rizky D. Novyantika"
 authorAvatar: "/img/avatar.png"
 date: 2018-02-26T13:19:28+07:00
-title: "What is Data?"
+title: "Hierarchical Cluster Analysis Concept"
 description: ""
 draft: false
 
