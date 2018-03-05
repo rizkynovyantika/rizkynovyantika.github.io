@@ -12,7 +12,7 @@ tags: [stats, math, computer]
 linktitle: "Variabel Explanation of Waiting Time to Get Job Research"
 nomenu: "main"
 noweight: 10
-image: "img/sampling-2.jpg"
+image: "img/teamwork.jpg"
 next: ""
 prev: ""
 ---
