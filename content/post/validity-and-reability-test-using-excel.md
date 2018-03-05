@@ -9,19 +9,13 @@ draft: true
 categories: []
 tags: [stats, math, computer]
 
-linktitle: "Analysis of Factors Affecting Waiting Time Getting Jobs with Binary Logistic Regression Methods Using R"
+linktitle: "Validity and Reability Using R"
 nomenu: "main"
 noweight: 10
 image: "img/sampling-2.jpg"
 next: ""
 prev: ""
 ---
-
-# Analysis of Factors Affecting Waiting Time Getting Jobs With Binary Logistic Regression Methods Using R
-
-With the same case as before, I write article about "Public Suggest: How to Get Job" and now I want to know what variable that significantly affects waiting time getting a job with Binary Logistic Regression Application Using R.
-
-Dengan kasus yang sama seperti sebelumnya, saya menulis artikel tentang "Public Suggest: How to Get Job" dan sekarang saya ingin mengetahui variabel apa yang secara signifikan mempengaruhi waktu tunggu mendapatkan pekerjaan dengan metode Regresi Logistik Biner Menggunakan R.
 
 Data yang digunakan dalam artikel ini merupakan data primer yang diambil sendiri dengan bantuan google drive. Data yang digunakan dalam artikel ini dapat anda unduh [disini](https://drive.google.com/open?id=1qlc_HK10ZY_W4uqz2DCGCYw1OwpdaJ4t)
 
@@ -35,7 +29,7 @@ Lama waktu tunggu mendapatkan pekerjaan :
 1 = 0-6 bulan
 2 = > 6 bulan
 
-Keterangan X1 sampai X20 merupakan variabel yang digunakan sebagai ukuran untuk mengetahui variabel apa saja yang dapat mempengaruhi waktu tunggu seseorang mendapatkan pekerjaan. Keterngan lebih rinci untuk masing-masing setiap variabel X dapat dilihat pada bagian akhir artikel ini.
+Keterangan X1 sampai X20 merupakan variabel yang digunakan sebagai ukuran untuk mengetahui variabel apa saja yang dapat mempengaruhi waktu tunggu seseorang mendapatkan pekerjaan. Keterangan lebih rinci untuk masing-masing setiap variabel X dapat dilihat pada bagian akhir artikel ini.
 
 ## Validitas dan Reabilitas Test 
 Dalam penelitian, baik berbentuk kualitatif maupun kuantitatif, kriteria utama yang harus diperhatikan adalah valid, reliabel, dan objektif.

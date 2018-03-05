@@ -35,7 +35,7 @@ Lama waktu tunggu mendapatkan pekerjaan :
 1 = 0-6 bulan
 2 = > 6 bulan
 
-Keterangan X1 sampai X20 merupakan variabel yang digunakan sebagai ukuran untuk mengetahui variabel apa saja yang dapat mempengaruhi waktu tunggu seseorang mendapatkan pekerjaan. Keterngan lebih rinci untuk masing-masing setiap variabel X dapat dilihat pada bagian akhir artikel ini.
+Keterangan X1 sampai X20 merupakan variabel yang digunakan sebagai ukuran untuk mengetahui variabel apa saja yang dapat mempengaruhi waktu tunggu seseorang mendapatkan pekerjaan. Keterangan lebih rinci untuk masing-masing setiap variabel X dapat dilihat [disini](variabel-explanation-of-waiting-time-to-get-job-research).
 
 ## What is Binary Logistic Regression?
 
@@ -57,40 +57,3 @@ Dalam melakukan analisis regresi logistik, dilakukan pengujian sebagai berikut :
 ### Koefisien Determinasi (R2)
 
 ### Pengujian Simultan (_Omnibus Test of Model Coefficient_)
-
-
-
-
-
-#### Keterangan Variabel X
-##### Variabel Akademik
-X1 : Pernyataan [IPK mempengaruhi dalam mendapatkan pekerjaan]
-X2 : Pernyataan [Lama kuliah IPK mempengaruhi dalam mendapatkan pekerjaan]
-X3 : Pernyataan [Sering mengikuti kompetisi/lomba bidang akademik mempengaruhi dalam mendapatkan pekerjaan]
-X4 : Pernyataan [Tingkat kompetisi/lomba yang diikuti mempengaruhi dalam mendapatkan pekerjaan]
-X5 : Pernyataan [Sering mengikuti seminar sesuai dengan jurusan mempengaruhi dalam mendapatkan pekerjaan]
-
-##### Variabel Organisasi
-X6 : Pernyataan [Mengikuti organisasi mempengaruhi dalam mendapatkan pekerjaan]
-X7 : Pernyataan [Jumlah organisasi yang diikuti selama kuliah mempengaruhi dalam mendapatkan pekerjaan]
-X8 : Pernyataan [Jabatan di organisasi mempengaruhi dalam mendapatkan pekerjaan]
-
-##### Variabel Kemampuan Bahasa
-X9 : Pernyataan [Penguasaan Bahasa Inggris mempengaruhi dalam mendapatkan pekerjaan]
-X10 : Pernyataan [Skor TOEFL mempengaruhi dalam mendapatkan pekerjaan]
-X11 : Pernyataan [Penguasaan bahasa asing (selain bahasa inggris) mempengaruhi dalam mendapatkan pekerjaan]
-
-##### Variabel Kemampuan Komputerisasi
-X12 : Pernyataan [Penguasaan Microsoft Office mempengaruhi dalam mendapatkan pekerjaan]
-X13 : Pernyataan [Penguasaan aplikasi-aplikasi yang sesuai jurusan mempengaruhi dalam mendapatkan pekerjaan]
-X14 : Pernyataan [Penguasaan aplikasi-aplikasi diluar jurusan mempengaruhi dalam mendapatkan pekerjaan]
-X15 : Pernyataan [Pernah mengikuti training/pelatihan aplikasi mempengaruhi dalam mendapatkan pekerjaan]
-
-##### Variabel Kemampuan Komunikasi
-X16 : Pernyataan [Kemampuan public speaking mempengaruhi dalam mendapatkan pekerjaan]
-X17 : Pernyataan [Kemampuan berbicara/komunikasi dengan lawan bicara atau team mempengaruhi dalam mendapatkan pekerjaan]
-X18 : Pernyataan [Kemampuan presentasi mempengaruhi dalam mendapatkan pekerjaan]
-
-##### Variabel Magang (_Internship_)
-X19 : Pernyataan [Pernah menjalani Magang atau PKL (Praktik Kerja Lapangan) mempengaruhi dalam mendapatkan pekerjaan]
-X20 : Pernyataan [Penempatan kerja saat Magang atau PKL (Praktik Kerja Lapangan) mempengaruhi dalam mendapatkan pekerjaan]
