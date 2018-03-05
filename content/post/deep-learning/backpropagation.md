@@ -32,7 +32,7 @@ up to this stage I feel confused because in an article said that the input value
 
 Sumber :
 [Step by Step Backpropagation Example by Matt Mazur](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/).
-[]()
+[Neural Networks: Does the input layer consist of neurons?](https://stackoverflow.com/questions/28288489/neural-networks-does-the-input-layer-consist-of-neurons)
 []()
 []()
 []()
