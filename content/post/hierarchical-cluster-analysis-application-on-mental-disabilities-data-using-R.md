@@ -12,7 +12,7 @@ tags: [stats, math, computer]
 linktitle: "Hierarchical Cluster Analysis Application on Mental Disabilities Data Using R"
 nomenu: "main"
 noweight: 10
-image: "img/data.jpg"
+image: "img/disabilities.jpg"
 next: ""
 prev: ""
 ---
