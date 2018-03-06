@@ -24,7 +24,7 @@ canonifyurls    = true
   linkedinName = "Rizky Dwi Novyantika"
   mediumName = "rizkynovyantika"
 
-  logo = "hugo-logo.png"
+  logo = "R.jpg"
   orgName = "EM"
   orgWebsite = "https://www.telematika.org"
   orgDescription = "Here is a description placeholder for your org"
@@ -51,16 +51,11 @@ canonifyurls    = true
   weight = 200
 
 [[menu.main]]
-  name = "Go"
-  url = "/tags/golang/"
-  weight = 100
-
-[[menu.main]]
   name = "Categories"
   url = "/categories/"
   weight = 99
 
 [[menu.main]]
-  name = "External"
-  url = "https://google.com/"
+  name = "Portfolio"
+  url = "https://github.com/rizkynovyantika"
   weight = 95
