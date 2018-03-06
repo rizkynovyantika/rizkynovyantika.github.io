@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Hierarchical Cluster Analysis Application on Mental Disability Data Using R</title>
+      <link>/post/hierarchical-cluster-analysis-application-on-mental-disability-data-using-r/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/hierarchical-cluster-analysis-application-on-mental-disability-data-using-r/</guid>
+      <description>Before you read this article, I recommended you to read the basic of cluster analysis in here.
+Penderita disabilitas mental memiliki kedudukan, hak dan kewajiban yang sama dengan masyarakat non disabilitas. Sebagai bagian dari warga negara Indonesia, sudah sepantasnya penderita disabilitas mental baik laki-laki dan perempuan tidak diperlakukan diskriminatif. Provinsi DIY memiliki angka penderita disabilitas yang cukup tinggi yaitu 2406 jiwa. dimana penderita disabilitas ini didominasi oleh penduduk dengan jenis kelamin perempuan pada kasus disabilitas mental.</description>
+    </item>
+    
+    <item>
       <title>Hierarchical Cluster Analysis Concept</title>
       <link>/post/hierarchical-cluster-analysis-concept/</link>
       <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
@@ -72,17 +82,6 @@ Simple Random Sampling  Cara paling populer yang dipakai dalam proses penarikan
       <description>Berikut ini adalah penjelasan variabel-variabel yang digunakan dalam penelitian &amp;ldquo;Analysis of Factors Affecting Waiting Time Getting Jobs with Binary Logistic Regression Methods Using R&amp;rdquo;
 Data yang digunakan dalam artikel ini merupakan data primer yang diambil sendiri dengan bantuan google drive. Data yang digunakan dalam artikel ini dapat anda unduh disini
 Keterangan data : 1 = SS (Sangat Setuju) 2 = S (Setuju) 3 = TS (Tidak Setuju) 4 = STS (Sangat Tidak Setuju)</description>
-    </item>
-    
-    <item>
-      <title>What is Data?</title>
-      <link>/post/what-is-data/</link>
-      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
-      
-      <guid>/post/what-is-data/</guid>
-      <description>Beberapa tahun belakangan ini kita tidak asing lagi mendengar kalimat &amp;ldquo;big data&amp;rdquo;. Sebenarnya big data tidak lain muncul karena adanya berkembang teknologi khususnya teknologi informasi, teknologi basis data, dll yang berkembang pesat akibat adanya internet. Lalu apa sebenarnya itu data? dan apa saja jenis-jenis data?
-Apa itu Data?  Data adalah sekumpulan nilai yang diperoleh dari suatu pengamatan atau observasi suatu objek.
- Data dapat berupa angka, lambang, atau sifat.</description>
     </item>
     
     <item>
