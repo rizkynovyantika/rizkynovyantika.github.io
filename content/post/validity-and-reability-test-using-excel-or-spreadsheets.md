@@ -4,7 +4,7 @@ authorAvatar: "/img/avatar.png"
 date: 2018-02-26T13:19:28+07:00
 title: "Validity and Reability Test Using Excel"
 description: ""
-draft: true
+draft: false
 
 categories: []
 tags: [stats, math, computer]
