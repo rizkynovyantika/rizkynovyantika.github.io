@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sampling on </title>
+    <link>/categories/sampling/</link>
+    <description>Recent content in Sampling on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 26 Feb 2018 13:19:28 +0700</lastBuildDate>
+    
+	<atom:link href="/categories/sampling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sampling Technique</title>
+      <link>/post/sampling-technique/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/sampling-technique/</guid>
+      <description>Sampling Technique Before you read this article, I recommended you to read this.
+Probability Sampling/Random Sampling Teknik pengambilan sampel dengan probability sampling adalah teknik sampel dengan memberikan kesempatan yang sama kepada seluruh anggota populasi untuk diambil sebagai sampel, contoh sederhananya adalah undian.
+Dalam probability sampling, terdapat beberapa teknik yang digunakan yaitu simple random sampling, systematic random sampling, stratified random sampling, cluster sampling dan multi stage sampling.
+Simple Random Sampling  Cara paling populer yang dipakai dalam proses penarikan sampel rambang sederhana adalah dengan undian.</description>
+    </item>
+    
+  </channel>
+</rss>

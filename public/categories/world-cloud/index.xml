@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>World Cloud on </title>
+    <link>/categories/world-cloud/</link>
+    <description>Recent content in World Cloud on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 26 Feb 2018 13:19:28 +0700</lastBuildDate>
+    
+	<atom:link href="/categories/world-cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Create Stylist Word Cloud Using Python</title>
+      <link>/post/how-to-create-stylist-word-cloud-using-python/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/how-to-create-stylist-word-cloud-using-python/</guid>
+      <description>What is Word Cloud? Word cloud atau disebut juga tag cloud adalah representasi visual dari data teks, biasanya digunakan untuk menggambarkan metadata keywords (tags) pada sebuah website/situs, untuk memvisualisasikan suatu bentuk teks secara bebas
+To create word cloud, you can use the data obtained from my research by downloading the data here.
+How to make Word Cloud in Python?  Remove unused words Replace words Counting the frequency of words (optional) Creating Word CLoud Styling Word CLoud (optional)  Remove unused words Data teks, biasanya terdapat kata yang tidak penting untuk dilakukan pembuatan word cloud oleh karena itu diperlukan syntax untuk melakukan penghapusan kata yang tidak digunakan.</description>
+    </item>
+    
+    <item>
+      <title>Public Suggest: How to Get Job</title>
+      <link>/post/public-suggest-how-to-get-job/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/public-suggest-how-to-get-job/</guid>
+      <description>Lulusan perguruan tinggi Indonesia sedang mengalami dilema, sebab gelar ijazah pendidikan tinggi yang mereka raih tak lagi jadi jaminan mudah untuk mendapat pekerjaan. Kesulitan mereka terserap dunia kerja semakin bertambah berat, karena mulai 1 Januari 2016 mereka juga bersaing dengan tenaga kerja asing dari negara-negara ASEAN sebagai dampak berlakunya Masyarakat Ekonomi Asean (MEA). Sulitnya lulusan universitas lokal memperoleh pekerjaan sudah terlihat dari angka pengangguran terdidik Indonesia yang meningkat setiap tahun. Berdasarkan data Badan Pusat Statistik (BPS) pada Agustus 2014, di Indonesia ada 9,5 persen (688.</description>
+    </item>
+    
+  </channel>
+</rss>
