@@ -2,14 +2,15 @@
 author: "Rizky D. Novyantika"
 authorAvatar: "/img/avatar.png"
 date: 2018-02-26T13:19:28+07:00
-title: "Analysis of Factors Affecting Waiting Time Getting Jobs with Binary Logistic Regression Methods Using R"
+title: "Analysis Factors of Affect Waiting Time to Get a Job with Binary Logistic Regression Method Using R"
+
 description: ""
 draft: true
 
 categories: []
 tags: [stats, math, computer]
 
-linktitle: "Analysis of Factors Affecting Waiting Time Getting Jobs with Binary Logistic Regression Methods Using R"
+linktitle: "Analysis Factors of Affect Waiting Time to Get a Job with Binary Logistic Regression Method Using R"
 nomenu: "main"
 noweight: 10
 image: "img/sampling-2.jpg"
@@ -17,9 +18,9 @@ next: ""
 prev: ""
 ---
 
-# Analysis of Factors Affecting Waiting Time Getting Jobs With Binary Logistic Regression Methods Using R
+# Analysis Factors of Affect Waiting Time to Get a Job with Binary Logistic Regression Method Using R
 
-With the same case as before, I write article about "Public Suggest: How to Get Job" and now I want to know what variable that significantly affects waiting time getting a job with Binary Logistic Regression Application Using R.
+With the same case as before, I write article about "Public Suggest: How to Get Job" and now I want to know what variable that significantly affects waiting time getting a job with Binary Logistic Regression Method Using R.
 
 Dengan kasus yang sama seperti sebelumnya, saya menulis artikel tentang "Public Suggest: How to Get Job" dan sekarang saya ingin mengetahui variabel apa yang secara signifikan mempengaruhi waktu tunggu mendapatkan pekerjaan dengan metode Regresi Logistik Biner Menggunakan R.
 
