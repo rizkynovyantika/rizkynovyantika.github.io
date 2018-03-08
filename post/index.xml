@@ -22,12 +22,13 @@
     </item>
     
     <item>
-      <title>Deep Learning Glossary</title>
-      <link>/post/deep-learning-glossary/</link>
+      <title>Convolutional Neural Network Glossary</title>
+      <link>/post/convolutional-neural-network-glossary/</link>
       <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
       
-      <guid>/post/deep-learning-glossary/</guid>
-      <description> Deep Learning Glossary </description>
+      <guid>/post/convolutional-neural-network-glossary/</guid>
+      <description>Convolutional Neural Network Glossary This glossary is work in progress and I am planning to continuously update it. If you find a mistake or think an important term is missing, please let me know via email.
+Deep Learning terminology can be quite overwhelming to newcomers. This glossary tries to define commonly used terms and link to original references and additional resources to help readers dive deeper into a specific topic.</description>
     </item>
     
     <item>

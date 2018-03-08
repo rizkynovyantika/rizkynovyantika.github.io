@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on </title>
+    <link>/categories/deep-learning/</link>
+    <description>Recent content in Deep Learning on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 26 Feb 2018 13:19:28 +0700</lastBuildDate>
+    
+	<atom:link href="/categories/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convolutional Neural Network Glossary</title>
+      <link>/post/convolutional-neural-network-glossary/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/convolutional-neural-network-glossary/</guid>
+      <description>Convolutional Neural Network Glossary This glossary is work in progress and I am planning to continuously update it. If you find a mistake or think an important term is missing, please let me know via email.
+Deep Learning terminology can be quite overwhelming to newcomers. This glossary tries to define commonly used terms and link to original references and additional resources to help readers dive deeper into a specific topic.</description>
+    </item>
+    
+  </channel>
+</rss>

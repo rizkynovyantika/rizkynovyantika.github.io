@@ -8,7 +8,7 @@
   </url>
   
   <url>
-    <loc>/post/deep-learning-glossary/</loc>
+    <loc>/post/convolutional-neural-network-glossary/</loc>
     <lastmod>2018-02-26T13:19:28+07:00</lastmod>
   </url>
   
@@ -76,6 +76,12 @@
   
   <url>
     <loc>/categories/data/</loc>
+    <lastmod>2018-02-26T13:19:28+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/deep-learning/</loc>
     <lastmod>2018-02-26T13:19:28+07:00</lastmod>
     <priority>0</priority>
   </url>
