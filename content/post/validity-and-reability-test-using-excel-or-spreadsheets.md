@@ -1,6 +1,6 @@
 ---
 author: "Rizky D. Novyantika"
-authorAvatar: "/img/avatar.png"
+authorAvatar: "/img/avatar.jpg"
 date: 2018-02-26T13:19:28+07:00
 title: "Validity and Reability Test Using Excel"
 description: ""
@@ -12,7 +12,7 @@ tags: [stats, math, computer]
 linktitle: "Validity and Reability Test Using Excel"
 nomenu: "main"
 noweight: 10
-image: "img/sampling-2.jpg"
+image: "img/validity.jpg"
 next: ""
 prev: ""
 ---

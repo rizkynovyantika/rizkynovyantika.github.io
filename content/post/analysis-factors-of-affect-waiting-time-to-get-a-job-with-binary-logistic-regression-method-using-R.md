@@ -1,6 +1,6 @@
 ---
 author: "Rizky D. Novyantika"
-authorAvatar: "/img/avatar.png"
+authorAvatar: "/img/avatar.jpg"
 date: 2018-02-26T13:19:28+07:00
 title: "Analysis Factors of Affect Waiting Time to Get a Job with Binary Logistic Regression Method Using R"
 

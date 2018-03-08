@@ -1,6 +1,6 @@
 ---
 author: "Rizky D. Novyantika"
-authorAvatar: "/img/avatar.png"
+authorAvatar: "/img/avatar.jpg"
 date: 2018-02-26T13:22:44+07:00
 title: "How Can I Get Best Sample"
 description: ""

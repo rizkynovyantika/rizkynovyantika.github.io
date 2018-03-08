@@ -32,10 +32,10 @@ canonifyurls    = true
   showSupport = true
 
   author = "EM"
-  authorAvatar = "img/ghost-icon.png"
+  authorAvatar = "/img/avatar.jpg"
   authorLocation = "Yogyakarta, ID"
   authorWebsite = "https://rizkynovyantika.github.io"
-  authorDescription = "Your description here"
+  authorDescription = "I’m someone who very interested in the world of data, analysis, research to bring up something new that can be useful for others. Then engaging people, making ideas, things easier and simpler for them to understand through analysis, statistics and visualizing it."
 
   pageNotFoundTitle = "404 - Page not found"
 

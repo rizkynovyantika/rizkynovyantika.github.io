@@ -1,6 +1,6 @@
 ---
 author: "Rizky D. Novyantika"
-authorAvatar: "/img/avatar.png"
+authorAvatar: "/img/avatar.jpg"
 date: {{ .Date }}
 title: "{{ replace .Name "-" " " | title }}"
 description: ""

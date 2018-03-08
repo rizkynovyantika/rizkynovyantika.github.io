@@ -1,6 +1,6 @@
 ---
 author: "Rizky D. Novyantika"
-authorAvatar: "/img/avatar.png"
+authorAvatar: "/img/avatar.jpg"
 date: 2018-02-26T13:19:28+07:00
 title: "Hierarchical Cluster Analysis Application on Mental Disabilities Data Using R"
 description: ""
