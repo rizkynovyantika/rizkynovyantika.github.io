@@ -29,11 +29,11 @@ Convolutional Neural Network yang merupakan subtipe dari Artificial Neural Netwo
 
 Keterangan Neuron  :
 
-* **Dendrites** bertugas untuk menerima dan mengantarkan impuls (rangsangan) ke cell body.
-* **Cell Body** bertugas untuk menerima impuls (rangsangan) dari dendrites dan meneruskannya ke axon.
-* **Nucleus** merupakan inti sel yang bertugas untuk mengatur kegiatan sel saraf (neuron) dan mengatur sifat keturunan dari sel tersebut.
-* **Axon** bertugas untuk menghantarkan impuls (rangsangan) dari cell body menuju efektor, seperti otot dan kelenjar.
-* **Synapse** bertugas untuk menghantarkan impuls ke saraf selanjutnya
+- **Dendrites** bertugas untuk menerima dan mengantarkan impuls (rangsangan) ke cell body.
+- **Cell Body** bertugas untuk menerima impuls (rangsangan) dari dendrites dan meneruskannya ke axon.
+- **Nucleus** merupakan inti sel yang bertugas untuk mengatur kegiatan sel saraf (neuron) dan mengatur sifat keturunan dari sel tersebut.
+- **Axon** bertugas untuk menghantarkan impuls (rangsangan) dari cell body menuju efektor, seperti otot dan kelenjar.
+- **Synapse** bertugas untuk menghantarkan impuls ke saraf selanjutnya
 
 Secara umum, bagian-bagian Neuron tersebut terhubung bagian satu dengan bagian lainnya. Jika diaplikasikan dalam Artificial Neural Network, tiap neuron menerima input dan melakukan operasi dot dengan sebuah weight, menjumlahkannya (_weighted sum_) dan menambahkan bias. Hasil dari operasi ini akan dijadikan parameter dari _activation function_ yang akan dijadikan output dari neuron tersebut.
 
