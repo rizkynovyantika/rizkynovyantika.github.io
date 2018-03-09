@@ -1,7 +1,7 @@
 baseurl         = "/"
 theme           = "casper-two"
 languageCode    = "en-US"
-disqusShortname = ""
+disqusShortname = "rizkydwinovyantika"
 paginate        = 6
 #SectionPagesMenu = "main"
 canonifyurls    = true
@@ -12,7 +12,7 @@ canonifyurls    = true
   copyright   = "© 2018"
 
   cover       = "img/blog-cover.jpg"
-  description = "Here is a description of your site."
+  description = "....."
   metaDescription = ""
   googleAnalytics = ""
   customCSS = []
@@ -25,13 +25,13 @@ canonifyurls    = true
   mediumName = "rizkynovyantika"
 
   logo = "logo.jpg"
-  orgName = "EM"
-  orgWebsite = "https://www.telematika.org"
-  orgDescription = "Here is a description placeholder for your org"
+  orgName = "Rizky Dwi Novyantika"
+  orgWebsite = "https://rizkynovyantika.github.io/"
+  orgDescription = "..........."
 
   showSupport = true
 
-  author = "EM"
+  author = "rizkynovyantika"
   authorAvatar = "/img/avatar.jpg"
   authorLocation = "Yogyakarta, ID"
   authorWebsite = "https://rizkynovyantika.github.io"
