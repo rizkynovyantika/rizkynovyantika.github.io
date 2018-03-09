@@ -61,9 +61,9 @@ Degan menggunakan filter 3x3 dengan strided atau langkah yang digunakan dalam pe
 Perhitungan pada proses konvolusi dengan ukuran filter 3x3 ini dimulai dari sudut kiri atas kemudian dilakukan _sliding window_ sampai pojok kiri bawah. 
 
 #### Activation Layer
-Tahap ini adalah perhitungan nilai dengan _Activation Function_ yang digunakan untuk mencari nilai non-linier pada nilai hasil konvolusi. Secara umum, _Activation function_ dapat dibagi menjadi 2 tipe yaitu fungsi aktivasi linier dan fungsi aktivasi non linier. Penjelasan Activation Function dapat dilihat [disini](https://rizkynovyantika.github.io/post/activation-function-concept-in-deep-learning)
+Tahap ini adalah perhitungan nilai dengan _Activation Function_ yang digunakan untuk mencari nilai non-linier pada nilai hasil konvolusi. Secara umum, _Activation function_ dapat dibagi menjadi 2 tipe yaitu fungsi aktivasi linier dan fungsi aktivasi non linier. Penjelasan Activation Function dapat dilihat [disini]()
 
-Activation Function yang digunakan dalam artikel ini menggunakan ReLU. Untuk lebih memahami ReLU dapat diilustrasikan dengan gambar dibawah ini :
+Activation Function yang digunakan dalam artikel ini menggunakan ReLu. Untuk lebih memahami ReLU dapat diilustrasikan dengan gambar dibawah ini :
 [Figure 1](/images/simple-convolutional-neural-network-concept/5.jpg)
 
 Kernel pertama (3 x 1) + (0 x 0) + (1 x (-1)) + (1 x 1) + (0 x 5) + (8 x (-1)) + (2 x 1) + (7 x 0) + (2 x (-1)) = -5, pada kernel kedua (3 x 0) + (0 x 0) + (1 x 0) + (1 x 0) + (5 x 1) + (8 x 0) + (2 x 0) + (7 x 0) + (2 x 0) = 5 dan pada kernel ketiga (3 x 0) + (0 x (-1)) + (1 x 0) + (1 x (-1)) + (5 x 5) + (8 x (-1)) + (2 x 0) + (7 x (-1)) + (2 x 0) = 9. Karena nilai tertinggi yang diperoleh menggunakan ketiga kernel tersebut, maka yang digunakan adalah angka 9 pada output selanjutnya, begitupun dengan kolom dan baris lainnya.
