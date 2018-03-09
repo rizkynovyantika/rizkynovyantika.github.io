@@ -21,5 +21,14 @@
 Deep Learning terminology can be quite overwhelming to newcomers. This glossary tries to define commonly used terms and link to original references and additional resources to help readers dive deeper into a specific topic.</description>
     </item>
     
+    <item>
+      <title>Simple Convolutional Neural Network Concept</title>
+      <link>/post/simple-convolutional-neural-network-concept/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/simple-convolutional-neural-network-concept/</guid>
+      <description> Convolutional Neural Network Concept </description>
+    </item>
+    
   </channel>
 </rss>
