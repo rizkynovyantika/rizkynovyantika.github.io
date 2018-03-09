@@ -22,15 +22,6 @@
     </item>
     
     <item>
-      <title>Activation Function Concept in Deep Learning</title>
-      <link>/post/activation-function-concept-in-deep-learning/</link>
-      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
-      
-      <guid>/post/activation-function-concept-in-deep-learning/</guid>
-      <description>Activation Function Concept in Deep Learning Activation function merupakan sebuah node yang ditambahkan ke akhir output dari setiap jaringan syaraf. Hal ini juga dikenal sebagai Transfer Function. Hal ini juga dapat dilampirkan di antara dua Neural Networks. Activation function digunakan untuk menentukan output jaringan syaraf tiruan. Activation function memetakan nilai yang dihasilkan di antara 0 sampai 1 atau -1 sampai 1 dan lain-lain (tergantung pada fungsinya). Activation function pada dasarnya dapat dibagi menjadi 2 tipe yaitu fungsi aktivasi linier dan fungsi aktivasi non linier.</description>
-    </item>
-    
-    <item>
       <title>Convolutional Neural Network Glossary</title>
       <link>/post/convolutional-neural-network-glossary/</link>
       <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
