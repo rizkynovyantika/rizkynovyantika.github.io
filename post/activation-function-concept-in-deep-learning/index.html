@@ -4,15 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Simple Convolutional Neural Network Concept &middot; </title>
+    <title>Activation Function Concept in Deep Learning &middot; </title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="canonical" href="/post/simple-convolutional-neural-network-concept/" />
+    <link rel="canonical" href="/post/activation-function-concept-in-deep-learning/" />
 
-     <meta name="description" content="Simple Convolutional Neural Network Concept Convolutional Neural Network merupakan subtipe dari Artificial Neural Network. Munculnya Artificial Neural Network d" /> 
+     <meta name="description" content="Activation Function Concept in Deep Learning Activation function merupakan sebuah node yang ditambahkan ke akhir output dari setiap jaringan syaraf. Hal ini jug" /> 
 
      
     
@@ -20,18 +20,18 @@
     <meta name="twitter:image" content="/img/deep.jpg"/>
     
  
-    <meta name="twitter:title" content="Simple Convolutional Neural Network Concept"/>
-    <meta name="twitter:description" content="Simple Convolutional Neural Network Concept Convolutional Neural Network merupakan subtipe dari Artificial Neural Network. Munculnya Artificial Neural Network d"/>
-    <meta name="twitter:url" content="/post/simple-convolutional-neural-network-concept/" />
+    <meta name="twitter:title" content="Activation Function Concept in Deep Learning"/>
+    <meta name="twitter:description" content="Activation Function Concept in Deep Learning Activation function merupakan sebuah node yang ditambahkan ke akhir output dari setiap jaringan syaraf. Hal ini jug"/>
+    <meta name="twitter:url" content="/post/activation-function-concept-in-deep-learning/" />
     <meta name="twitter:site" content="@rdnovyantika"/>
 
     <meta property="og:site_name" content="" />
-    <meta property="og:title" content="Simple Convolutional Neural Network Concept &middot; Rizky D. Novyantika" />
-    <meta property="og:url" content="/post/simple-convolutional-neural-network-concept/" />
+    <meta property="og:title" content="Activation Function Concept in Deep Learning &middot; Rizky D. Novyantika" />
+    <meta property="og:url" content="/post/activation-function-concept-in-deep-learning/" />
     <meta property="article:publisher" content="https://www.facebook.com/rizky.novyantika" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="Simple Convolutional Neural Network Concept Convolutional Neural Network merupakan subtipe dari Artificial Neural Network. Munculnya Artificial Neural Network d" />
+    <meta property="og:description" content="Activation Function Concept in Deep Learning Activation function merupakan sebuah node yang ditambahkan ke akhir output dari setiap jaringan syaraf. Hal ini jug" />
 
     <meta property="article:published_time" content="2018-02-26T13:19:28&#43;07:00" />
     <meta property="article:tag" content="stats" /><meta property="article:tag" content="math" /><meta property="article:tag" content="computer" />
@@ -112,7 +112,7 @@
             <time class="post-full-meta-date" datetime="2018-02-26">26 February 2018</time>
                 <span class="date-divider">/</span> <a href="/tags/stats/">#stats</a>&nbsp;<a href="/tags/math/">#math</a>&nbsp;
         </section>
-        <h1 class="post-full-title">Simple Convolutional Neural Network Concept</h1>
+        <h1 class="post-full-title">Activation Function Concept in Deep Learning</h1>
     </header>
     
     <figure class="post-full-image" style="background-image: url(/img/deep.jpg)">
@@ -122,74 +122,68 @@
         <div class="kg-card-markdown">
         
 
-<h1 id="simple-convolutional-neural-network-concept">Simple Convolutional Neural Network Concept</h1>
+<h1 id="activation-function-concept-in-deep-learning">Activation Function Concept in Deep Learning</h1>
 
-<p>Convolutional Neural Network merupakan subtipe dari Artificial Neural Network. Munculnya Artificial Neural Network dikarenakan adanya kebutuhan penyelesaian permasalahan pada domain Machine Learning. Permasalahan-permasalahan tersebut dapat diselesaikan dengan berbagai macam algoritma, tergantung permasalahan yang muncul pada Machine Learning yang dibuat.</p>
+<p>Activation function merupakan sebuah node yang ditambahkan ke akhir output dari setiap jaringan syaraf. Hal ini juga dikenal sebagai Transfer Function. Hal ini juga dapat dilampirkan di antara dua Neural Networks.  Activation function digunakan untuk menentukan output jaringan syaraf tiruan. Activation function memetakan nilai yang dihasilkan di antara 0 sampai 1 atau -1 sampai 1 dan lain-lain (tergantung pada fungsinya). Activation function pada dasarnya dapat dibagi menjadi 2 tipe yaitu fungsi aktivasi linier dan fungsi aktivasi non linier. (Sharma, 2017)</p>
 
-<p>Algoritma yang digunakan untuk menyelesaikan permasalahan pada domain Machine Learning tersebut semakin berkembang dengan adanya sifat ketidakpuasan manusia. Salah satu algoritma yang berkembang tersebut adalah MLP (Multilayer Perceptron) yang kemudian dikembangkan menjadi Convolutional Neural Network.</p>
+<h2 id="fungsi-aktivasi-linear">Fungsi Aktivasi Linear</h2>
 
-<p>Convolutional Neural Network yang merupakan subtipe dari Artificial Neural Network merupakan model yang terinspirasi dari bagaimana neuron manusia bekerja yaitu dengan neuron. Neuron adalah sel saraf yang berfungsi menghantarkan impuls listrik yang terbentuk akibat adanya suatu stimulus atau rangsangan. Dimana setiap neuron tersebut saling terhubung dan informasi mengalir dari setiap neuron.</p>
+<p>Seperti yang dapat dlihat fungsinya adalah garis atau linier. Oleh karena itu, output dari fungsi tidak akan dibatasi antara suatu rentang.</p>
 
-<p><a href="/images/simple-convolutional-neural-network-concept/1.jpg">Figure 1</a></p>
+<p><img src="/images/activation-function-concept-in-deep-learning/1.png" alt="Figure 1" /></p>
 
-<p>Keterangan Neuron  :
-* <strong>Dendrites</strong> bertugas untuk menerima dan mengantarkan impuls (rangsangan) ke cell body.
-* <strong>Cell Body</strong> bertugas untuk menerima impuls (rangsangan) dari dendrites dan meneruskannya ke axon.
-* <strong>Nucleus</strong> merupakan inti sel yang bertugas untuk mengatur kegiatan sel saraf (neuron) dan mengatur sifat keturunan dari sel tersebut.
-* <strong>Axon</strong> bertugas untuk menghantarkan impuls (rangsangan) dari cell body menuju efektor, seperti otot dan kelenjar.
-* <strong>Synapse</strong> bertugas untuk menghantarkan impuls ke saraf selanjutnya</p>
+<p>Fungsi aktivasi pada linear function memiliki persamaan : f(x) = x dan Rentang : -tak hingga sampai tak hingga. Fungsi aktivasi linier ini tidak membantu dengan kompleksitas atau berbagai parameter data biasa yang diumpankan ke jaringan syaraf tiruan. (Sharma, 2017)</p>
 
-<p>Secara umum, bagian-bagian Neuron tersebut terhubung bagian satu dengan bagian lainnya. Jika diaplikasikan dalam Artificial Neural Network, tiap neuron menerima input dan melakukan operasi dot dengan sebuah weight, menjumlahkannya (<em>weighted sum</em>) dan menambahkan bias. Hasil dari operasi ini akan dijadikan parameter dari <em>activation function</em> yang akan dijadikan output dari neuron tersebut.</p>
+<h2 id="fungsi-aktivasi-non-linear">Fungsi Aktivasi Non-Linear</h2>
 
-<h2 id="convolutional-neural-network">Convolutional Neural Network</h2>
+<p>Fungsi Aktivasi Nonlinear adalah fungsi aktivasi yang paling banyak digunakan. Nonlinier membantu membuat grafik terlihat seperti gambar dibawah ini :</p>
 
-<h3 id="neural-network-architecture">Neural Network Architecture</h3>
+<p><img src="/images/activation-function-concept-in-deep-learning/2.png" alt="Figure 1" /></p>
 
-<p>Untuk mempermudah pemahaman arsitektur neural network, disini saya akan mengaplikasikan bagaimana arsitektur neural network secara umum pada proses pendeteksian tanda nomor kendaraan.</p>
-
-<p><a href="/images/simple-convolutional-neural-network-concept/2.jpg">Figure 1</a></p>
-
-<p>Pada arsitektur tersebut terdapat beberapa 3 layer secara umum yaitu input layer, hidden layer dan output layer. Berikut ini adalah penjelasan dari masing-masing layer tersebut :
-1. <strong>Input layer</strong> merupakan seluruh data yang diperoleh dari gambar pada <strong>image for detection</strong>. Input layer merupakan seluruh node pixel gambar. Pada gambar tersebut terbagi menjadi 300x300 pixel, sehingga node yang terdapat pada input layer sebanyak 90.000 node, akan tetapi keterangan pada arsitektur tersebut adalah 270.000.000 yang diperoleh dari 90.000 node dari pixel asli yang dikalikan dengan 3 channel warna RGB (<em>Red, Green, Blue</em>) sehingga menghasilkan node sebanyak 270.000.000.</p>
+<p>Fungsi aktivasi non linier memudahkan model untuk mengeneralisasi atau menyesuaikan dengan berbagai data dan untuk membedakan antara output. Terminologi utama yang perlu dipahami untuk fungsi nonlinier adalah Derivatif atau Diferensial dan Monotonik. Fungsi Derivatif atau Diferensial: Perubahan sumbu y w.r.t. Perubahan x-axis. Hal ini juga dikenal sebagai kemiringan dan fungsi Monotonik merupakan sebuah fungsi yang bervariasi sedemikian rupa sehingga tidak pernah berkurang atau tidak pernah meningkat. Berikut ini adalah fungsi Aktivasi Nonlinier berdasarkan rentang atau kurva (Sharma, 2017) :</p>
 
 <ol>
-<li><p><strong>Hidden layer</strong> merupakan bagian pada neural network yang tidak ditampilkan, sehingga dinamakan sebagai hidden layer. Pada hidden layer ini dilakukan proses perhitungan. Dalam hal ini perhitungan dilakukan untuk melakukan deteksi tanda nomor kendaraan. Pada hidden layer ini sebenarnya terdapat tiga proses untuk mendapatkan hasil deteksi tanda nomor kendaraan. Tiga proses tersebut adalah proses <em>convolution</em>, proses <em>activation</em> dan proses <em>pooling</em> layer.</p></li>
+<li><p><strong>Sigmoid Activation Function</strong></p>
 
-<li><p><strong>Output layer</strong> merupakan hasil dari proses dari input layer dan hidden layer yang berupa <em>fully connected layer</em> atau dengan kata lain adalah menggabungkan semua layer yang diperkirakan sebagai tanda nomor kendaraan.</p></li>
+<p>Sigmoid Activation Function disebut juga sebagai Logistic activation function. Kurva Fungsi Sigmoid terlihat seperti bentuk S.</p></li>
 </ol>
 
-<h3 id="convolution-layer">Convolution Layer</h3>
+<p><img src="/images/activation-function-concept-in-deep-learning/3.png" alt="Figure 1" /></p>
 
-<p>Konvolusi merupakan cara untuk mengkombinasikan dua buah deret angka yang menghasilkan deret angka yang ketiga. Dalam penelitian ini, dua buah deret angka tersebut terdapat dalam input dan kernel atau filter sedangkan deret angka yang ketiganya adalah output. Input dan kernel atau filter keduanya memiliki deret angka berupa matriks. Pada input deret angka diperoleh berdasarkan tingkat warna yang ada pada masing-masing piksel sedangkan pada kernel atau filter deret angka disesuaikan oleh kebutuhan peneliti. Terdapat beberapa jenis kernel atau filter yang biasa digunakan, diantaranya pada operasi identity, edge detection, sharpen, box blur, Gaussian blur dan lain sebagainya.
-Lapisan konvolusi dibentuk dengan menjalankan filter di atasnya. Filter merupakan blok lain atau kubus dengan tinggi dan lebar yang lebih kecil namun kedalaman yang sama yang tersapu di atas gambar dasar atau gambar asli. Filter digunakan untuk menentukan pola apa yang akan dideteksi yang selanjutnya dikonvolusi atau dikalikan dengan nilai pada matriks input, nilai pada masing-masing kolom dan baris pada matriks sangat bergantung pada jenis pola yang akan dideteksi
-Untuk dapat lebih memahami cara kerja dari proses konvolusi, peneliti akan menggunakan sampel deret angka pada input dikarenakan keterbatasan penulisan dengan ukuran 300x300 maka peneliti menggunakan sampel deret angka pada input dengan ukuran 6x6 dan menggunakan kernel atau filter untuk operasi <em>vertical edge detection</em> dengan ukuran 3x3.
-<a href="/images/simple-convolutional-neural-network-concept/3.jpg">Figure 1</a></p>
+<pre><code>Alasan utama mengapa kita menggunakan fungsi sigmoid adalah karena ada antara (0 sampai 1). Oleh karena itu, ini terutama digunakan untuk model dimana kita harus memprediksi probabilitas sebagai keluaran. Karena probabilitas dari sesuatu yang ada hanya antara kisaran 0 dan 1, sigmoid adalah pilihan tepat. Fungsi itu bisa dibedakan. Artinya, kita bisa menemukan kemiringan kurva sigmoid pada dua titik yaitu fungsi monotonik tapi turunan fungsi tidak. Fungsi sigmoid logistik dapat menyebabkan jaringan saraf terjebak pada waktu pelatihan.Fungsi softmax adalah fungsi aktivasi logistik yang lebih umum yang digunakan untuk klasifikasi multiklass.
+</code></pre>
 
-<p>Degan menggunakan filter 3x3 dengan strided atau langkah yang digunakan dalam perhitungan konvolusi tersebut adalah 1 maka proses perhitungan konvolusi tersebut dapat divisualisasikan seperti gambar dibawah ini :
-<a href="/images/simple-convolutional-neural-network-concept/4.jpg">Figure 1</a></p>
+<ol>
+<li><p>Tanh Activation function</p>
 
-<p>Perhitungan pada proses konvolusi dengan ukuran filter 3x3 ini dimulai dari sudut kiri atas kemudian dilakukan <em>sliding window</em> sampai pojok kiri bawah.</p>
+<p>Tanh Activation function disebut juga sebagai hyperbolic tangent. Tanh juga seperti sigmoid logistik tapi lebih baik. Kisaran fungsi tanh adalah dari (-1 sampai 1). tanh juga sigmoidal (berbentuk s).</p></li>
+</ol>
 
-<h4 id="activation-layer">Activation Layer</h4>
+<p><img src="/images/activation-function-concept-in-deep-learning/4.png" alt="Figure 1" /></p>
 
-<p>Tahap ini adalah perhitungan nilai dengan <em>Activation Function</em> yang digunakan untuk mencari nilai non-linier pada nilai hasil konvolusi. Secara umum, <em>Activation function</em> dapat dibagi menjadi 2 tipe yaitu fungsi aktivasi linier dan fungsi aktivasi non linier. Penjelasan Activation Function dapat dilihat <a href="https://rizkynovyantika.github.io/post/activation-function-concept-in-deep-learning">disini</a></p>
+<pre><code>Keuntungannya adalah input negatif akan dipetakan sangat negatif dan input nol akan dipetakan mendekati nol pada grafik tanh. Fungsi ini bisa dibedakan. Fungsinya monoton sementara turunannya tidak. Fungsi tanh terutama digunakan klasifikasi antara dua kelas. Fungsi aktivasi sigmoid tanh dan logistic digunakan pada jaring umpan maju.
+</code></pre>
 
-<p>Activation Function yang digunakan dalam artikel ini menggunakan ReLU. Untuk lebih memahami ReLU dapat diilustrasikan dengan gambar dibawah ini :
-<a href="/images/simple-convolutional-neural-network-concept/5.jpg">Figure 1</a></p>
+<ol>
+<li><p>ReLU (Rectified Linear Unit) Activation Function</p>
 
-<p>Kernel pertama (3 x 1) + (0 x 0) + (1 x (-1)) + (1 x 1) + (0 x 5) + (8 x (-1)) + (2 x 1) + (7 x 0) + (2 x (-1)) = -5, pada kernel kedua (3 x 0) + (0 x 0) + (1 x 0) + (1 x 0) + (5 x 1) + (8 x 0) + (2 x 0) + (7 x 0) + (2 x 0) = 5 dan pada kernel ketiga (3 x 0) + (0 x (-1)) + (1 x 0) + (1 x (-1)) + (5 x 5) + (8 x (-1)) + (2 x 0) + (7 x (-1)) + (2 x 0) = 9. Karena nilai tertinggi yang diperoleh menggunakan ketiga kernel tersebut, maka yang digunakan adalah angka 9 pada output selanjutnya, begitupun dengan kolom dan baris lainnya.</p>
+<p>ReLU adalah fungsi aktivasi yang paling banyak digunakan di dunia saat ini. Karena, ini digunakan di hampir semua jaringan saraf konvolusi atau pembelajaran yang dalam.</p></li>
+</ol>
 
-<h4 id="pooling-layer">Pooling Layer</h4>
+<p><img src="/images/activation-function-concept-in-deep-learning/5.png" alt="Figure 1" /></p>
 
-<p><a href="/images/simple-convolutional-neural-network-concept/6.jpg">Figure 1</a></p>
+<pre><code>Seperti yang dapat Anda lihat, ReLU setengah diperbaiki (dari bawah). Ini adalah f (s) adalah nol bila z kurang dari nol dan f (z) sama dengan z bila z di atas atau sama dengan nol. Rentang: [0 sampai tak terbatas) Fungsi dan turunannya keduanya bersifat monoton. Tapi masalahnya adalah semua nilai negatif menjadi nol segera yang menurunkan kemampuan model agar sesuai atau melatih dari data dengan benar. Itu berarti setiap masukan negatif yang diberikan pada fungsi aktivasi ReLU mengubah nilainya menjadi nol segera dalam grafik, yang pada gilirannya mempengaruhi grafik yang dihasilkan dengan tidak memetakan nilai negatif secara tepat..
+</code></pre>
 
-<p>Pooling layer pada Gambar diatas merupakan pooling layer dengan menggunakan metode Max Pooling. Pooling layer sendiri berguna untuk mengurangi ukuran gambar. Pada Gambar diatas terdapat lapisan dengan ukuran 6×6, apabila peneliti menggunakan filter 3x3 dengan stride 1 maka diperoleh hasil Max pooling dengan ukuran 4x4.</p>
+<ol>
+<li>Leaky ReLU
+Leaky ReLU adalah usaha untuk memecahkan masalah ReLU yang sekarat. Berikut gambar perbedaan ReLU dan Leaky ReLU :</li>
+</ol>
 
-<h4 id="fully-connected-layer">Fully Connected Layer</h4>
+<p><img src="/images/activation-function-concept-in-deep-learning/6.png" alt="Figure 1" /></p>
 
-<p><a href="/images/simple-convolutional-neural-network-concept/7.jpg">Figure 1</a></p>
-
-<p>Menggunakan lapisan yang terhubung sepenuhnya di mana setiap piksel dianggap sebagai neuron terpisah seperti jaringan saraf biasa. Lapisan terakhir yang terhubung sepenuhnya akan mengandung banyak neuron sebagai jumlah kelas yang harus diprediksi. Pada proses fully connected layer ini penyatuan setiap piksel yang dianggap sebagai Tanda Nomor Kendaraan yang kemudian akan menjadi sebuah output yang terdiri dari satu label kelas yaitu Tanda Nomor Kendaraan Bermotor sehingga lapisan yang terhubung terakhir hanya memiliki 1 neuron.</p>
+<pre><code>Kebocoran membantu meningkatkan jangkauan fungsi ReLU. Biasanya, nilai a adalah 0,01 atau lebih. Bila tidak ada 0,01 maka disebut Randomized ReLU. Oleh karena itu rentang Leaky ReLU adalah (-infinity to infinity). Fungsi Leaky dan Randomized ReLU bersifat monoton. Selain itu, turunannya juga bersifat monoton.
+</code></pre>
     
         </div>
     </section>
@@ -215,8 +209,8 @@ Untuk dapat lebih memahami cara kerja dari proses konvolusi, peneliti akan mengg
 
 
 var disqus_config = function () {
-this.page.url = "\/post\/simple-convolutional-neural-network-concept\/";  
-this.page.identifier = "\/post\/simple-convolutional-neural-network-concept\/"; 
+this.page.url = "\/post\/activation-function-concept-in-deep-learning\/";  
+this.page.identifier = "\/post\/activation-function-concept-in-deep-learning\/"; 
 };
 
 (function() { 
@@ -250,15 +244,13 @@ s.setAttribute('data-timestamp', +new Date());
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="/post/how-to-create-stylist-word-cloud-using-python/">How to Create Stylist Word Cloud Using Python</a></li>            
-        
-                      
-        
           <li><a href="/post/hierarchical-cluster-analysis-concept/">Hierarchical Cluster Analysis Concept</a></li>            
         
-          <li><a href="/post/sampling-technique/">Sampling Technique</a></li>            
+          <li><a href="/post/convolutional-neural-network-glossary/">Convolutional Neural Network Glossary</a></li>            
         
-          <li><a href="/post/public-suggest-how-to-get-job/">Public Suggest: How to Get Job</a></li>            
+          <li><a href="/post/validity-and-reability-test-using-excel/">Validity and Reability Test Using Excel</a></li>            
+        
+          <li><a href="/post/how-can-i-get-best-sample/">How Can I Get Best Sample</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
@@ -271,25 +263,21 @@ s.setAttribute('data-timestamp', +new Date());
       
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="/post/simple-convolutional-neural-network-concept/">
-      <div class="post-card-image" style="background-image: url(/img/deep.jpg)"></div>
+    <a class="post-card-image-link" href="/post/how-can-i-get-best-sample/">
+      <div class="post-card-image" style="background-image: url(/img/sampling-1.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="/post/simple-convolutional-neural-network-concept/">
+      <a class="post-card-content-link" href="/post/how-can-i-get-best-sample/">
           <header class="post-card-header">
-              <span class="post-card-tags">
-              #stats 
-              #math 
-              #computer  </span>
               
-              <h2 class="post-card-title">Simple Convolutional Neural Network Concept</h2>
+              <h2 class="post-card-title">How Can I Get Best Sample</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>Simple Convolutional Neural Network Concept Convolutional Neural Network merupakan subtipe dari Artificial Neural Network. Munculnya Artificial Neural Network dikarenakan adanya kebutuhan penyelesaian permasalahan pada domain Machine Learning. Permasalahan-permasalahan tersebut dapat diselesaikan dengan berbagai macam algoritma, tergantung permasalahan yang muncul pada Machine Learning yang dibuat.
-Algoritma yang digunakan untuk menyelesaikan permasalahan pada domain Machine Learning tersebut semakin berkembang dengan adanya sifat ketidakpuasan manusia. Salah satu algoritma yang berkembang tersebut adalah MLP (Multilayer Perceptron) yang kemudian dikembangkan menjadi Convolutional Neural Network. ...  </p>
+                <p>How I can get best sample? Buat para peneliti yang masih newbie mungkin masih bingung kenapa dalam sebuah penelitian menggunakan sebuah sampel? terus bedanya populasi sama sampel apaan sih? kenapa ga pake populasi aja yang jumlahnya udah jelas dan ga perlu di kira-kira kayak sampel? terus kalo mau pake sampel, sampel yang bagus itu kayak gimana sih? and.. lets start to answer the question :)
+ Populasi sendiri adalah keseluruhan objek yang akan/ingin diteliti sedangkan sampel adalah bagian dari populasi yang menjadi objek penelitian — Djawranto, 1994 ...  </p>
               
           </section>
       </a>
@@ -304,27 +292,25 @@ Algoritma yang digunakan untuk menyelesaikan permasalahan pada domain Machine Le
       
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="/post/validity-and-reability-test-using-excel/">
-      <div class="post-card-image" style="background-image: url(/img/validity.jpg)"></div>
+    <a class="post-card-image-link" href="/post/convolutional-neural-network-glossary/">
+      <div class="post-card-image" style="background-image: url(/img/deep.jpg)"></div>
     </a>
     
 
     <div class="post-card-content">
-      <a class="post-card-content-link" href="/post/validity-and-reability-test-using-excel/">
+      <a class="post-card-content-link" href="/post/convolutional-neural-network-glossary/">
           <header class="post-card-header">
               <span class="post-card-tags">
               #stats 
               #math 
               #computer  </span>
               
-              <h2 class="post-card-title">Validity and Reability Test Using Excel</h2>
+              <h2 class="post-card-title">Convolutional Neural Network Glossary</h2>
           </header>
           <section class="post-card-excerpt">
               
-                <p>Data yang digunakan dalam artikel ini merupakan data primer yang diambil sendiri dengan bantuan google drive. Data yang digunakan dalam artikel ini dapat anda unduh disini
-Keterangan data : 1 = SS (Sangat Setuju) 2 = S (Setuju) 3 = TS (Tidak Setuju) 4 = STS (Sangat Tidak Setuju)
-Lama waktu tunggu mendapatkan pekerjaan : 1 = 0-6 bulan 2 = &gt; 6 bulan
-Keterangan X1 sampai X20 merupakan variabel yang digunakan sebagai ukuran untuk mengetahui variabel apa saja yang dapat mempengaruhi waktu tunggu seseorang mendapatkan pekerjaan. ...  </p>
+                <p>Convolutional Neural Network Glossary This glossary is work in progress and I am planning to continuously update it. If you find a mistake or think an important term is missing, please let me know via email.
+Deep Learning terminology can be quite overwhelming to newcomers. This glossary tries to define commonly used terms and link to original references and additional resources to help readers dive deeper into a specific topic. ...  </p>
               
           </section>
       </a>
@@ -348,17 +334,17 @@ Keterangan X1 sampai X20 merupakan variabel yang digunakan sebagai ukuran untuk 
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
-  <div class="floating-header-title">Simple Convolutional Neural Network Concept</div>
+  <div class="floating-header-title">Activation Function Concept in Deep Learning</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
      <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
     </div>
     
-    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Simple%20Convolutional%20Neural%20Network%20Concept&amp;url=%2fpost%2fsimple-convolutional-neural-network-concept%2f"
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Activation%20Function%20Concept%20in%20Deep%20Learning&amp;url=%2fpost%2factivation-function-concept-in-deep-learning%2f"
           onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
       </a>
-      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2fsimple-convolutional-neural-network-concept%2f"
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2factivation-function-concept-in-deep-learning%2f"
           onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
       </a>
