@@ -1,7 +1,7 @@
 baseurl         = "/"
 theme           = "casper-two"
 languageCode    = "en-US"
-disqusShortname = "rizkydwinovyantika"
+disqusShortname = "https-rizkynovyantika-github-io"
 paginate        = 6
 #SectionPagesMenu = "main"
 canonifyurls    = true
