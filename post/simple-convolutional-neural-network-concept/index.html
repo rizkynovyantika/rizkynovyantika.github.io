@@ -17,7 +17,7 @@
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="/img/deep.jpg"/>
+    <meta name="twitter:image" content="/img/brain.jpg"/>
     
  
     <meta name="twitter:title" content="Simple Convolutional Neural Network Concept"/>
@@ -36,7 +36,7 @@
     <meta property="article:published_time" content="2018-02-26T13:19:28&#43;07:00" />
     <meta property="article:tag" content="stats" /><meta property="article:tag" content="math" /><meta property="article:tag" content="computer" />
 
-    <meta property="og:image" content="/img/deep.jpg"/>
+    <meta property="og:image" content="/img/brain.jpg"/>
 
 
     <meta name="generator" content="Hugo 0.36.1" />
@@ -115,7 +115,7 @@
         <h1 class="post-full-title">Simple Convolutional Neural Network Concept</h1>
     </header>
     
-    <figure class="post-full-image" style="background-image: url(/img/deep.jpg)">
+    <figure class="post-full-image" style="background-image: url(/img/brain.jpg)">
     </figure>
 
     <section class="post-full-content">
@@ -130,14 +130,17 @@
 
 <p>Convolutional Neural Network yang merupakan subtipe dari Artificial Neural Network merupakan model yang terinspirasi dari bagaimana neuron manusia bekerja yaitu dengan neuron. Neuron adalah sel saraf yang berfungsi menghantarkan impuls listrik yang terbentuk akibat adanya suatu stimulus atau rangsangan. Dimana setiap neuron tersebut saling terhubung dan informasi mengalir dari setiap neuron.</p>
 
-<p><a href="/images/simple-convolutional-neural-network-concept/1.jpg">Figure 1</a></p>
+<p><img src="/images/simple-convolutional-neural-network-concept/1.jpeg" alt="Figure 1" /></p>
 
-<p>Keterangan Neuron  :
-* <strong>Dendrites</strong> bertugas untuk menerima dan mengantarkan impuls (rangsangan) ke cell body.
-* <strong>Cell Body</strong> bertugas untuk menerima impuls (rangsangan) dari dendrites dan meneruskannya ke axon.
-* <strong>Nucleus</strong> merupakan inti sel yang bertugas untuk mengatur kegiatan sel saraf (neuron) dan mengatur sifat keturunan dari sel tersebut.
-* <strong>Axon</strong> bertugas untuk menghantarkan impuls (rangsangan) dari cell body menuju efektor, seperti otot dan kelenjar.
-* <strong>Synapse</strong> bertugas untuk menghantarkan impuls ke saraf selanjutnya</p>
+<p>Keterangan Neuron  :</p>
+
+<ul>
+<li><strong>Dendrites</strong> bertugas untuk menerima dan mengantarkan impuls (rangsangan) ke cell body.</li>
+<li><strong>Cell Body</strong> bertugas untuk menerima impuls (rangsangan) dari dendrites dan meneruskannya ke axon.</li>
+<li><strong>Nucleus</strong> merupakan inti sel yang bertugas untuk mengatur kegiatan sel saraf (neuron) dan mengatur sifat keturunan dari sel tersebut.</li>
+<li><strong>Axon</strong> bertugas untuk menghantarkan impuls (rangsangan) dari cell body menuju efektor, seperti otot dan kelenjar.</li>
+<li><strong>Synapse</strong> bertugas untuk menghantarkan impuls ke saraf selanjutnya</li>
+</ul>
 
 <p>Secara umum, bagian-bagian Neuron tersebut terhubung bagian satu dengan bagian lainnya. Jika diaplikasikan dalam Artificial Neural Network, tiap neuron menerima input dan melakukan operasi dot dengan sebuah weight, menjumlahkannya (<em>weighted sum</em>) dan menambahkan bias. Hasil dari operasi ini akan dijadikan parameter dari <em>activation function</em> yang akan dijadikan output dari neuron tersebut.</p>
 
@@ -147,12 +150,13 @@
 
 <p>Untuk mempermudah pemahaman arsitektur neural network, disini saya akan mengaplikasikan bagaimana arsitektur neural network secara umum pada proses pendeteksian tanda nomor kendaraan.</p>
 
-<p><a href="/images/simple-convolutional-neural-network-concept/2.jpg">Figure 1</a></p>
+<p><img src="/images/simple-convolutional-neural-network-concept/2.png" alt="Figure 1" /></p>
 
-<p>Pada arsitektur tersebut terdapat beberapa 3 layer secara umum yaitu input layer, hidden layer dan output layer. Berikut ini adalah penjelasan dari masing-masing layer tersebut :
-1. <strong>Input layer</strong> merupakan seluruh data yang diperoleh dari gambar pada <strong>image for detection</strong>. Input layer merupakan seluruh node pixel gambar. Pada gambar tersebut terbagi menjadi 300x300 pixel, sehingga node yang terdapat pada input layer sebanyak 90.000 node, akan tetapi keterangan pada arsitektur tersebut adalah 270.000.000 yang diperoleh dari 90.000 node dari pixel asli yang dikalikan dengan 3 channel warna RGB (<em>Red, Green, Blue</em>) sehingga menghasilkan node sebanyak 270.000.000.</p>
+<p>Pada arsitektur tersebut terdapat beberapa 3 layer secara umum yaitu input layer, hidden layer dan output layer. Berikut ini adalah penjelasan dari masing-masing layer tersebut :</p>
 
 <ol>
+<li><p><strong>Input layer</strong> merupakan seluruh data yang diperoleh dari gambar pada <strong>image for detection</strong>. Input layer merupakan seluruh node pixel gambar. Pada gambar tersebut terbagi menjadi 300x300 pixel, sehingga node yang terdapat pada input layer sebanyak 90.000 node, akan tetapi keterangan pada arsitektur tersebut adalah 270.000.000 yang diperoleh dari 90.000 node dari pixel asli yang dikalikan dengan 3 channel warna RGB (<em>Red, Green, Blue</em>) sehingga menghasilkan node sebanyak 270.000.000.</p></li>
+
 <li><p><strong>Hidden layer</strong> merupakan bagian pada neural network yang tidak ditampilkan, sehingga dinamakan sebagai hidden layer. Pada hidden layer ini dilakukan proses perhitungan. Dalam hal ini perhitungan dilakukan untuk melakukan deteksi tanda nomor kendaraan. Pada hidden layer ini sebenarnya terdapat tiga proses untuk mendapatkan hasil deteksi tanda nomor kendaraan. Tiga proses tersebut adalah proses <em>convolution</em>, proses <em>activation</em> dan proses <em>pooling</em> layer.</p></li>
 
 <li><p><strong>Output layer</strong> merupakan hasil dari proses dari input layer dan hidden layer yang berupa <em>fully connected layer</em> atau dengan kata lain adalah menggabungkan semua layer yang diperkirakan sebagai tanda nomor kendaraan.</p></li>
@@ -160,34 +164,39 @@
 
 <h3 id="convolution-layer">Convolution Layer</h3>
 
-<p>Konvolusi merupakan cara untuk mengkombinasikan dua buah deret angka yang menghasilkan deret angka yang ketiga. Dalam penelitian ini, dua buah deret angka tersebut terdapat dalam input dan kernel atau filter sedangkan deret angka yang ketiganya adalah output. Input dan kernel atau filter keduanya memiliki deret angka berupa matriks. Pada input deret angka diperoleh berdasarkan tingkat warna yang ada pada masing-masing piksel sedangkan pada kernel atau filter deret angka disesuaikan oleh kebutuhan peneliti. Terdapat beberapa jenis kernel atau filter yang biasa digunakan, diantaranya pada operasi identity, edge detection, sharpen, box blur, Gaussian blur dan lain sebagainya.
-Lapisan konvolusi dibentuk dengan menjalankan filter di atasnya. Filter merupakan blok lain atau kubus dengan tinggi dan lebar yang lebih kecil namun kedalaman yang sama yang tersapu di atas gambar dasar atau gambar asli. Filter digunakan untuk menentukan pola apa yang akan dideteksi yang selanjutnya dikonvolusi atau dikalikan dengan nilai pada matriks input, nilai pada masing-masing kolom dan baris pada matriks sangat bergantung pada jenis pola yang akan dideteksi
-Untuk dapat lebih memahami cara kerja dari proses konvolusi, peneliti akan menggunakan sampel deret angka pada input dikarenakan keterbatasan penulisan dengan ukuran 300x300 maka peneliti menggunakan sampel deret angka pada input dengan ukuran 6x6 dan menggunakan kernel atau filter untuk operasi <em>vertical edge detection</em> dengan ukuran 3x3.
-<a href="/images/simple-convolutional-neural-network-concept/3.jpg">Figure 1</a></p>
+<p>Konvolusi merupakan cara untuk mengkombinasikan dua buah deret angka yang menghasilkan deret angka yang ketiga. Dalam penelitian ini, dua buah deret angka tersebut terdapat dalam input dan kernel atau filter sedangkan deret angka yang ketiganya adalah output. Input dan kernel atau filter keduanya memiliki deret angka berupa matriks. Pada input deret angka diperoleh berdasarkan tingkat warna yang ada pada masing-masing piksel sedangkan pada kernel atau filter deret angka disesuaikan oleh kebutuhan peneliti. Terdapat beberapa jenis kernel atau filter yang biasa digunakan, diantaranya pada operasi identity, edge detection, sharpen, box blur, Gaussian blur dan lain sebagainya.</p>
 
-<p>Degan menggunakan filter 3x3 dengan strided atau langkah yang digunakan dalam perhitungan konvolusi tersebut adalah 1 maka proses perhitungan konvolusi tersebut dapat divisualisasikan seperti gambar dibawah ini :
-<a href="/images/simple-convolutional-neural-network-concept/4.jpg">Figure 1</a></p>
+<p>Lapisan konvolusi dibentuk dengan menjalankan filter di atasnya. Filter merupakan blok lain atau kubus dengan tinggi dan lebar yang lebih kecil namun kedalaman yang sama yang tersapu di atas gambar dasar atau gambar asli. Filter digunakan untuk menentukan pola apa yang akan dideteksi yang selanjutnya dikonvolusi atau dikalikan dengan nilai pada matriks input, nilai pada masing-masing kolom dan baris pada matriks sangat bergantung pada jenis pola yang akan dideteksi.</p>
+
+<p>Untuk dapat lebih memahami cara kerja dari proses konvolusi, peneliti akan menggunakan sampel deret angka pada input dikarenakan keterbatasan penulisan dengan ukuran 300x300 maka peneliti menggunakan sampel deret angka pada input dengan ukuran 6x6 dan menggunakan kernel atau filter untuk operasi <em>vertical edge detection</em> dengan ukuran 3x3.</p>
+
+<p><img src="/images/simple-convolutional-neural-network-concept/3.png" alt="Figure 1" /></p>
+
+<p>Dengan menggunakan filter 3x3 dengan strided atau langkah yang digunakan dalam perhitungan konvolusi tersebut adalah 1 maka proses perhitungan konvolusi tersebut dapat divisualisasikan seperti gambar dibawah ini :</p>
+
+<p><img src="/images/simple-convolutional-neural-network-concept/4.png" alt="Figure 1" /></p>
 
 <p>Perhitungan pada proses konvolusi dengan ukuran filter 3x3 ini dimulai dari sudut kiri atas kemudian dilakukan <em>sliding window</em> sampai pojok kiri bawah.</p>
 
 <h4 id="activation-layer">Activation Layer</h4>
 
-<p>Tahap ini adalah perhitungan nilai dengan <em>Activation Function</em> yang digunakan untuk mencari nilai non-linier pada nilai hasil konvolusi. Secara umum, <em>Activation function</em> dapat dibagi menjadi 2 tipe yaitu fungsi aktivasi linier dan fungsi aktivasi non linier. Penjelasan Activation Function dapat dilihat [disini]()</p>
+<p>Tahap ini adalah perhitungan nilai dengan <em>Activation Function</em> yang digunakan untuk mencari nilai non-linier pada nilai hasil konvolusi. Secara umum, <em>Activation function</em> dapat dibagi menjadi 2 tipe yaitu fungsi aktivasi linier dan fungsi aktivasi non linier. Penjelasan Activation Function dapat dilihat <a href="https://rizkynovyantika.github.io/post/activation-function-concept-in-deep-learning">disini</a></p>
 
-<p>Activation Function yang digunakan dalam artikel ini menggunakan ReLu. Untuk lebih memahami ReLU dapat diilustrasikan dengan gambar dibawah ini :
-<a href="/images/simple-convolutional-neural-network-concept/5.jpg">Figure 1</a></p>
+<p>Activation Function yang digunakan dalam artikel ini menggunakan ReLU. Untuk lebih memahami ReLU dapat diilustrasikan dengan gambar dibawah ini :</p>
+
+<p><img src="/images/simple-convolutional-neural-network-concept/5.png" alt="Figure 1" /></p>
 
 <p>Kernel pertama (3 x 1) + (0 x 0) + (1 x (-1)) + (1 x 1) + (0 x 5) + (8 x (-1)) + (2 x 1) + (7 x 0) + (2 x (-1)) = -5, pada kernel kedua (3 x 0) + (0 x 0) + (1 x 0) + (1 x 0) + (5 x 1) + (8 x 0) + (2 x 0) + (7 x 0) + (2 x 0) = 5 dan pada kernel ketiga (3 x 0) + (0 x (-1)) + (1 x 0) + (1 x (-1)) + (5 x 5) + (8 x (-1)) + (2 x 0) + (7 x (-1)) + (2 x 0) = 9. Karena nilai tertinggi yang diperoleh menggunakan ketiga kernel tersebut, maka yang digunakan adalah angka 9 pada output selanjutnya, begitupun dengan kolom dan baris lainnya.</p>
 
 <h4 id="pooling-layer">Pooling Layer</h4>
 
-<p><a href="/images/simple-convolutional-neural-network-concept/6.jpg">Figure 1</a></p>
+<p><img src="/images/simple-convolutional-neural-network-concept/6.png" alt="Figure 1" /></p>
 
 <p>Pooling layer pada Gambar diatas merupakan pooling layer dengan menggunakan metode Max Pooling. Pooling layer sendiri berguna untuk mengurangi ukuran gambar. Pada Gambar diatas terdapat lapisan dengan ukuran 6×6, apabila peneliti menggunakan filter 3x3 dengan stride 1 maka diperoleh hasil Max pooling dengan ukuran 4x4.</p>
 
 <h4 id="fully-connected-layer">Fully Connected Layer</h4>
 
-<p><a href="/images/simple-convolutional-neural-network-concept/7.jpg">Figure 1</a></p>
+<p><img src="/images/simple-convolutional-neural-network-concept/7.png" alt="Figure 1" /></p>
 
 <p>Menggunakan lapisan yang terhubung sepenuhnya di mana setiap piksel dianggap sebagai neuron terpisah seperti jaringan saraf biasa. Lapisan terakhir yang terhubung sepenuhnya akan mengandung banyak neuron sebagai jumlah kelas yang harus diprediksi. Pada proses fully connected layer ini penyatuan setiap piksel yang dianggap sebagai Tanda Nomor Kendaraan yang kemudian akan menjadi sebuah output yang terdiri dari satu label kelas yaitu Tanda Nomor Kendaraan Bermotor sehingga lapisan yang terhubung terakhir hanya memiliki 1 neuron.</p>
     
@@ -250,13 +259,13 @@ s.setAttribute('data-timestamp', +new Date());
     <div class="read-next-card-content">
       
         <ul>
+          <li><a href="/post/hierarchical-cluster-analysis-application-on-mental-disabilities-data-using-r/">Hierarchical Cluster Analysis Application on Mental Disabilities Data Using R</a></li>            
+        
           <li><a href="/post/convolutional-neural-network-glossary/">Convolutional Neural Network Glossary</a></li>            
         
-          <li><a href="/post/validity-and-reability-test-using-excel/">Validity and Reability Test Using Excel</a></li>            
-        
-          <li><a href="/post/variabel-explanation-of-waiting-time-to-get-job-research/">Variabel Explanation of Waiting Time to Get Job Research</a></li>            
-        
           <li><a href="/post/what-is-data/">What is Data?</a></li>            
+        
+          <li><a href="/post/hierarchical-cluster-analysis-concept/">Hierarchical Cluster Analysis Concept</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
@@ -269,43 +278,8 @@ s.setAttribute('data-timestamp', +new Date());
       
       <article class="post-card post"> 
     
-    <a class="post-card-image-link" href="/post/sampling-technique/">
-      <div class="post-card-image" style="background-image: url(/img/sampling-2.jpg)"></div>
-    </a>
-    
-
-    <div class="post-card-content">
-      <a class="post-card-content-link" href="/post/sampling-technique/">
-          <header class="post-card-header">
-              <span class="post-card-tags">
-              #stats 
-              #math 
-              #computer  </span>
-              
-              <h2 class="post-card-title">Sampling Technique</h2>
-          </header>
-          <section class="post-card-excerpt">
-              
-                <p>Sampling Technique Before you read this article, I recommended you to read this.
-Probability Sampling/Random Sampling Teknik pengambilan sampel dengan probability sampling adalah teknik sampel dengan memberikan kesempatan yang sama kepada seluruh anggota populasi untuk diambil sebagai sampel, contoh sederhananya adalah undian.
-Dalam probability sampling, terdapat beberapa teknik yang digunakan yaitu simple random sampling, systematic random sampling, stratified random sampling, cluster sampling dan multi stage sampling.
-Simple Random Sampling  Cara paling populer yang dipakai dalam proses penarikan sampel rambang sederhana adalah dengan undian. ...  </p>
-              
-          </section>
-      </a>
-
-      <footer class="post-card-meta">
-          <img class="author-profile-image" src="/img/avatar.jpg" alt="Author" />
-          <span class="post-card-author"><a href="/">Rizky D. Novyantika</a></span>
-      </footer>
-    </div>
-</article>
-      
-      
-      <article class="post-card post"> 
-    
     <a class="post-card-image-link" href="/post/simple-convolutional-neural-network-concept/">
-      <div class="post-card-image" style="background-image: url(/img/brain.jpg)"></div>
+      <div class="post-card-image" style="background-image: url(/img/deep.jpg)"></div>
     </a>
     
 
@@ -323,6 +297,41 @@ Simple Random Sampling  Cara paling populer yang dipakai dalam proses penarikan
               
                 <p>Simple Convolutional Neural Network Concept Convolutional Neural Network merupakan subtipe dari Artificial Neural Network. Munculnya Artificial Neural Network dikarenakan adanya kebutuhan penyelesaian permasalahan pada domain Machine Learning. Permasalahan-permasalahan tersebut dapat diselesaikan dengan berbagai macam algoritma, tergantung permasalahan yang muncul pada Machine Learning yang dibuat.
 Algoritma yang digunakan untuk menyelesaikan permasalahan pada domain Machine Learning tersebut semakin berkembang dengan adanya sifat ketidakpuasan manusia. Salah satu algoritma yang berkembang tersebut adalah MLP (Multilayer Perceptron) yang kemudian dikembangkan menjadi Convolutional Neural Network. ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="/img/avatar.jpg" alt="Author" />
+          <span class="post-card-author"><a href="/">Rizky D. Novyantika</a></span>
+      </footer>
+    </div>
+</article>
+      
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="/post/validity-and-reability-test-using-excel/">
+      <div class="post-card-image" style="background-image: url(/img/validity.jpg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/post/validity-and-reability-test-using-excel/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #stats 
+              #math 
+              #computer  </span>
+              
+              <h2 class="post-card-title">Validity and Reability Test Using Excel</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>Data yang digunakan dalam artikel ini merupakan data primer yang diambil sendiri dengan bantuan google drive. Data yang digunakan dalam artikel ini dapat anda unduh disini
+Keterangan data : 1 = SS (Sangat Setuju) 2 = S (Setuju) 3 = TS (Tidak Setuju) 4 = STS (Sangat Tidak Setuju)
+Lama waktu tunggu mendapatkan pekerjaan : 1 = 0-6 bulan 2 = &gt; 6 bulan
+Keterangan X1 sampai X20 merupakan variabel yang digunakan sebagai ukuran untuk mengetahui variabel apa saja yang dapat mempengaruhi waktu tunggu seseorang mendapatkan pekerjaan. ...  </p>
               
           </section>
       </a>
