@@ -72,6 +72,15 @@ How to make Word Cloud in Python?  Remove unused words Replace words Counting th
     </item>
     
     <item>
+      <title>Research Step for Object Detection Using Tensoflow</title>
+      <link>/post/research-step-for-object-detection-using-tensoflow/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/research-step-for-object-detection-using-tensoflow/</guid>
+      <description>Research Step for Object Detection Using Tensoflow Salah satu yang mengalami perkembangan pesat pada bidang komputerisasi adalah computer vision. Dalam computer vision terdapat beberapa permasalahan diantaranya adalah Image classification, object detection, dan neural style transfer. Object detection dengan jaringan saraf tiruan ini masih berkembang sebagai teknologi untuk menduplikasi kemampuan manusia dalam memahami informasi dari sebuah gambar agar komputer dapat mengenali objek pada gambar selayaknya manusia. Lalu, bagaimana cara untuk membuat object detection menggunakan Tensorflow?</description>
+    </item>
+    
+    <item>
       <title>Sampling Technique</title>
       <link>/post/sampling-technique/</link>
       <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>

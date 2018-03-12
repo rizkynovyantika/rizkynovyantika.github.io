@@ -22,6 +22,15 @@ Deep Learning terminology can be quite overwhelming to newcomers. This glossary 
     </item>
     
     <item>
+      <title>Research Step for Object Detection Using Tensoflow</title>
+      <link>/post/research-step-for-object-detection-using-tensoflow/</link>
+      <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
+      
+      <guid>/post/research-step-for-object-detection-using-tensoflow/</guid>
+      <description>Research Step for Object Detection Using Tensoflow Salah satu yang mengalami perkembangan pesat pada bidang komputerisasi adalah computer vision. Dalam computer vision terdapat beberapa permasalahan diantaranya adalah Image classification, object detection, dan neural style transfer. Object detection dengan jaringan saraf tiruan ini masih berkembang sebagai teknologi untuk menduplikasi kemampuan manusia dalam memahami informasi dari sebuah gambar agar komputer dapat mengenali objek pada gambar selayaknya manusia. Lalu, bagaimana cara untuk membuat object detection menggunakan Tensorflow?</description>
+    </item>
+    
+    <item>
       <title>Simple Convolutional Neural Network Concept</title>
       <link>/post/simple-convolutional-neural-network-concept/</link>
       <pubDate>Mon, 26 Feb 2018 13:19:28 +0700</pubDate>
