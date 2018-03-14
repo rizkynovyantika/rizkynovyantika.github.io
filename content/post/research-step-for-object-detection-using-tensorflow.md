@@ -19,18 +19,29 @@ prev: ""
 
 # Research Step for Object Detection Using Tensoflow
 
-Salah satu yang mengalami perkembangan pesat pada bidang komputerisasi adalah _computer vision_. Dalam _computer vision_ terdapat beberapa permasalahan diantaranya adalah _Image classification_, _object detection_, dan _neural style transfer_. _Object detection_ dengan jaringan saraf tiruan ini masih berkembang sebagai teknologi untuk menduplikasi kemampuan manusia dalam memahami informasi dari sebuah gambar agar komputer dapat mengenali objek pada gambar selayaknya manusia. Lalu, bagaimana cara untuk membuat object detection menggunakan Tensorflow?
+Salah satu yang mengalami perkembangan pesat pada bidang komputerisasi adalah _computer vision_. Dalam _computer vision_ terdapat beberapa permasalahan diantaranya adalah _Image classification_, _object detection_, dan _neural style transfer_. _Object detection_ dengan jaringan saraf tiruan ini masih berkembang sebagai teknologi untuk menduplikasi kemampuan manusia dalam memahami informasi dari sebuah gambar agar komputer dapat mengenali objek pada gambar selayaknya manusia. Lalu, bagaimana cara untuk membuat _object detection_ menggunakan Tensorflow?
 
 ![Figure 1](/images/research-step-for-object-detection-using-tensorflow/1.png)
 
 Langkah-langkah yang digunakan untuk membuat deteksi objek menggunakan Tensorflow adalah sebagai berikut :
 
-1. Tahap awal dimulai dengan mengumpulkan data gambar 
-2. Langkah selanjutnya adalah dilakukan pelabelan gambar untuk mempermudah penentuan letak objek yang akan dideteksi
+1. Tahap awal dimulai dengan mengumpulkan data gambar, pengumpulan data gambar dapat dilakukan dengan menggunakan aplikasi [Fatkun Batch Download Image](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf) pada Chrome, [Image Downloader](https://id.wikihow.com/Mengunduh-Semua-Gambar-di-Halaman-Web) pada Chrome [DownThemAll](https://id.wikihow.com/Mengunduh-Semua-Gambar-di-Halaman-Web) atau pada Firefox.
+Dalam hal ini saya merekomendasikan menggunakan Fatkun Batch Download Image karena penggunaannya lebih mudah khususnya dalam hal penentuan halaman yang akan di download gambarnya. Langkah-langkah untuk mengambil gambar menggunakan Fatkun Batch Download Image dapat dilihat [disini]()
+
+
+2. Langkah selanjutnya adalah dilakukan pelabelan gambar atau _tracking costum object_, tahap ini dilakukan untuk mempermudah penentuan letak objek yang akan dideteksi. Pelabelan gambar dapat dilakukan menggunakan 
+
+
+
+
 3. Setelah proses pelabelan perlu adanya konversi berkas dari XML ke CSV untuk tujuan konversi dataset ke berkas TFRecord 
 4. Setelah proses konversi berkas XML dengan output berupa file CSV perlu adanya konversi ke TensorFlow Record file yang digunakan untuk feeding data pada proses pelatihan 
 5. Kemudian dilakukan pembuatan label Map dan dataset (file TFRecord) yang sesuai dengan proses pelabelan data.
-6. Kemudian langkah selanjutnya adalah konfigurasi object detection training pipeline untuk mengkonfigurasi proses pelatihan dan evaluasi yang dilakukan menggunakan berkas protobuf
+6. Sebelum dilakukan konfigurasi pipeline, terlebih dahulu dilakukan  
+7. Kemudian langkah selanjutnya adalah konfigurasi object detection training pipeline untuk mengkonfigurasi proses pelatihan dan evaluasi yang dilakukan menggunakan berkas protobuf. Sebelum tahapan ini d
+
+Sebelum tahap ini dilakukan terlebih dahulu dilakukan install dependencies,  Beberapa dependencies tersebut dapat dilihat [disini]()
+
 7. Langkah selanjutnya adalah dilakukan proses training. 
 	
 	* Tahap awal pada proses pelatihan dimulai dengan Feeding data pelatihan atau memasukan data pelatihan ke dalam TensorFlow
