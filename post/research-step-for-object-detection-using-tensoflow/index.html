@@ -124,20 +124,32 @@
 
 <h1 id="research-step-for-object-detection-using-tensoflow">Research Step for Object Detection Using Tensoflow</h1>
 
-<p>Salah satu yang mengalami perkembangan pesat pada bidang komputerisasi adalah <em>computer vision</em>. Dalam <em>computer vision</em> terdapat beberapa permasalahan diantaranya adalah <em>Image classification</em>, <em>object detection</em>, dan <em>neural style transfer</em>. <em>Object detection</em> dengan jaringan saraf tiruan ini masih berkembang sebagai teknologi untuk menduplikasi kemampuan manusia dalam memahami informasi dari sebuah gambar agar komputer dapat mengenali objek pada gambar selayaknya manusia. Lalu, bagaimana cara untuk membuat object detection menggunakan Tensorflow?</p>
+<p>Salah satu yang mengalami perkembangan pesat pada bidang komputerisasi adalah <em>computer vision</em>. Dalam <em>computer vision</em> terdapat beberapa permasalahan diantaranya adalah <em>Image classification</em>, <em>object detection</em>, dan <em>neural style transfer</em>. <em>Object detection</em> dengan jaringan saraf tiruan ini masih berkembang sebagai teknologi untuk menduplikasi kemampuan manusia dalam memahami informasi dari sebuah gambar agar komputer dapat mengenali objek pada gambar selayaknya manusia. Lalu, bagaimana cara untuk membuat <em>object detection</em> menggunakan Tensorflow?</p>
 
 <p><img src="/images/research-step-for-object-detection-using-tensorflow/1.png" alt="Figure 1" /></p>
 
 <p>Langkah-langkah yang digunakan untuk membuat deteksi objek menggunakan Tensorflow adalah sebagai berikut :</p>
 
 <ol>
-<li>Tahap awal dimulai dengan mengumpulkan data gambar</li>
-<li>Langkah selanjutnya adalah dilakukan pelabelan gambar untuk mempermudah penentuan letak objek yang akan dideteksi</li>
-<li>Setelah proses pelabelan perlu adanya konversi berkas dari XML ke CSV untuk tujuan konversi dataset ke berkas TFRecord</li>
-<li>Setelah proses konversi berkas XML dengan output berupa file CSV perlu adanya konversi ke TensorFlow Record file yang digunakan untuk feeding data pada proses pelatihan</li>
-<li>Kemudian dilakukan pembuatan label Map dan dataset (file TFRecord) yang sesuai dengan proses pelabelan data.</li>
-<li>Kemudian langkah selanjutnya adalah konfigurasi object detection training pipeline untuk mengkonfigurasi proses pelatihan dan evaluasi yang dilakukan menggunakan berkas protobuf</li>
+<li><p>Tahap awal dimulai dengan mengumpulkan data gambar, pengumpulan data gambar dapat dilakukan dengan menggunakan aplikasi <a href="https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf">Fatkun Batch Download Image</a> pada Chrome, <a href="https://id.wikihow.com/Mengunduh-Semua-Gambar-di-Halaman-Web">Image Downloader</a> pada Chrome <a href="https://id.wikihow.com/Mengunduh-Semua-Gambar-di-Halaman-Web">DownThemAll</a> atau pada Firefox.
+Dalam hal ini saya merekomendasikan menggunakan Fatkun Batch Download Image karena penggunaannya lebih mudah khususnya dalam hal penentuan halaman yang akan di download gambarnya. Langkah-langkah untuk mengambil gambar menggunakan Fatkun Batch Download Image dapat dilihat [disini]()</p></li>
 
+<li><p>Langkah selanjutnya adalah dilakukan pelabelan gambar atau <em>tracking costum object</em>, tahap ini dilakukan untuk mempermudah penentuan letak objek yang akan dideteksi. Pelabelan gambar dapat dilakukan menggunakan</p></li>
+
+<li><p>Setelah proses pelabelan perlu adanya konversi berkas dari XML ke CSV untuk tujuan konversi dataset ke berkas TFRecord</p></li>
+
+<li><p>Setelah proses konversi berkas XML dengan output berupa file CSV perlu adanya konversi ke TensorFlow Record file yang digunakan untuk feeding data pada proses pelatihan</p></li>
+
+<li><p>Kemudian dilakukan pembuatan label Map dan dataset (file TFRecord) yang sesuai dengan proses pelabelan data.</p></li>
+
+<li><p>Sebelum dilakukan konfigurasi pipeline, terlebih dahulu dilakukan</p></li>
+
+<li><p>Kemudian langkah selanjutnya adalah konfigurasi object detection training pipeline untuk mengkonfigurasi proses pelatihan dan evaluasi yang dilakukan menggunakan berkas protobuf. Sebelum tahapan ini d</p></li>
+</ol>
+
+<p>Sebelum tahap ini dilakukan terlebih dahulu dilakukan install dependencies,  Beberapa dependencies tersebut dapat dilihat [disini]()</p>
+
+<ol>
 <li><p>Langkah selanjutnya adalah dilakukan proses training.</p>
 
 <ul>
@@ -221,15 +233,13 @@ s.setAttribute('data-timestamp', +new Date());
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="/post/sampling-technique/">Sampling Technique</a></li>            
+          <li><a href="/post/how-to-create-stylist-word-cloud-using-python/">How to Create Stylist Word Cloud Using Python</a></li>            
         
-                      
+          <li><a href="/post/hierarchical-cluster-analysis-concept/">Hierarchical Cluster Analysis Concept</a></li>            
+        
+          <li><a href="/post/hierarchical-cluster-analysis-application-on-mental-disabilities-data-using-r/">Hierarchical Cluster Analysis Application on Mental Disabilities Data Using R</a></li>            
         
           <li><a href="/post/validity-and-reability-test-using-excel/">Validity and Reability Test Using Excel</a></li>            
-        
-          <li><a href="/post/what-is-data/">What is Data?</a></li>            
-        
-          <li><a href="/post/simple-convolutional-neural-network-concept/">Simple Convolutional Neural Network Concept</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
