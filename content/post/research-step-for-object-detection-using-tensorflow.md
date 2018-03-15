@@ -57,6 +57,7 @@ Kemudian dengan langkah yang sama, proses pengujian juga dilakukan dimulai denga
 13. Kesimpulan
 
 ***Recommended object detection link*** :
+
 [Sentdex Tutorial](https://www.youtube.com/watch?v=COlbP62-B-U&list=PLQVvvaa0QuDcNK5GeCQnxYnSSaar2tpku)
 
 [How to train your own object detector with Tensorflow's Object Detector API](https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9)
