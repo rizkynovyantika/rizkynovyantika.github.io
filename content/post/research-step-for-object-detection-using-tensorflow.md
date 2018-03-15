@@ -43,10 +43,10 @@ Cara untuk mengubah berkas XML ke CSV dapat dilihat [disini](https://github.com/
 7. Langkah selanjutnya adalah dilakukan proses training. 
 	
 	* Tahap awal pada proses pelatihan dimulai dengan Feeding data pelatihan atau memasukan data pelatihan ke dalam TensorFlow
-	* Langkah selanjutnya yaitu dilakukan proses pelatihan data gambar untuk menghasilkan sistem pendeteksi objek Tanda Nomor Kendaraan Bermotor (TNKB) dengan menggunakan algoritma Convolutional Neural Network
+	* Langkah selanjutnya yaitu dilakukan proses pelatihan data gambar untuk menghasilkan sistem pendeteksi objek dengan menggunakan algoritma Convolutional Neural Network
 	* Langkah selanjutnya adalah Pooling Layer yang digunakan untuk mengurangi dimensi dari downsampling, sehingga mempercepat komputasi karena parameter yang harus diupdate semakin sedikit dan mengatasi overfitting.
 	* Kemudian dilakukan aktivasi menggunakan ReLU (Rectrified Linear Units) kemudian langkah untuk proses pelatihan
-	* Setelah dilakukan aktivasi, kemudian akan menghasilkan output prediksi kelas yang berupa gambar hasil deteksi Tanda Nomor Kendaraan Bermotor (TNKB)
+	* Setelah dilakukan aktivasi, kemudian akan menghasilkan output prediksi kelas yang berupa gambar hasil deteksi 
 
 8. Ketika output dari hasil pelatihan menghasilkan tingkat akurasi yang rendah maka akan dilakukan proses pelatihan kembali, akan tetapi apabila output menghasilkan akurasi yang tinggi akan dilanjutkan dengan langkah selanjutnya.
 9. Pada saat proses pelatihan maka akan menghasilkan checkpoint yang dibuat secara otomatis oleh TensorFlow berbentuk graph tensor yang bertujuan untuk menyimpan informasi proses pelatihan yang dilakukan, jika proses pelatihan selesai maka selanjutnya adalah mengeskpor graph tensor dan dijadikan model yang siap dipakai
