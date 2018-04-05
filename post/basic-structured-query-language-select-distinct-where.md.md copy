@@ -1,0 +1,107 @@
+---
+author: "Rizky D. Novyantika"
+authorAvatar: "/img/avatar.jpg"
+date: 2018-02-26T13:19:28+07:00
+title: “Basic Structured Query Language (SQL)”
+description: ""
+draft: true
+
+categories: [database, SQL, Query]
+tags: [stats, math, computer]
+
+linktitle: "Basic Structured Query Language (SQL) Part 1”
+nomenu: "main"
+noweight: 10
+image: "img/data.jpg"
+next: ""
+prev: ""
+---
+
+## What is SQL?
+
+SQL adalah bahasa standar yang digunakan untuk menyimpan, memanipulasi, dan mengambil data dalam basis data.
+Dalam artikel ini pembahasan dalam Basic Structure Query Language (SQL) akan membahas tiga function, yaitu SELECT, SELECT DISTINCT dan WHERE
+
+## Demo Database
+
+Untuk dapat lebih memahami pengaplikasian SQL kita dapat menggunakan contoh dari tabel “Customer” dalam sebuah database dibawah ini :
+
+| CustomerID | CustomerName                       | ContactName        | Address                       | City        | PostalCode | Country |
+|------------|------------------------------------|--------------------|-------------------------------|-------------|------------|---------|
+| 1          | Alfreds Futterkiste                | Maria Anders       | Obere Str. 57                 | Berlin      | 12209      | Germany |
+| 2          | Ana Trujillo Emparedados y helados | Ana Trujillo       | Avda. de la Constitución 2222 | México D.F. | 05021      | Mexico  |
+| 3          | Antonio Moreno Taquería            | Antonio Moreno     | Mataderos 2312                | México D.F. | 5023       | Mexico  |
+| 4          | Around the Horn                    | Thomas Hardy       | 120 Hanover Sq.               | London      | WA1 1DP    | UK      |
+| 5          | Berglunds snabbköp                 | Christina Berglund | Berguvsvägen 8                | Luleå       | S-958 22   | Sweden  |
+
+### SELECT Statement
+fungsi SELECT digunakan untuk mengekstrak data dari database
+
+```
+SELECT Country FROM Customers;
+```
+
+With query above, we can get the result is :
+
+![Figure 1](/images/basic-structured-query-language-part-1/1.png)
+
+### SELECT DISTINCT Statement
+Di dalam tabel, kolom sering berisi banyak nilai duplikat dan terkadang kita hanya ingin mencantumkan nilai-nilai yang berbeda. Pernyataan SELECT DISTINCT digunakan untuk menampilkan atau mengembalikan hanya nilai-nilai yang berbeda
+
+
+```
+SELECT DISTINCT Country FROM Customers;
+```
+With query above, we can get the result is :
+
+![Figure 1](/images/basic-structured-query-language-part-1/2.png)
+
+```
+SELECT COUNT(DISTINCT Country) FROM Customers;
+```
+or 
+
+```
+SELECT Count(*) AS DistinctCountries
+FROM (SELECT DISTINCT Country FROM Customers);
+```
+We can use the query above in Microsoft Access, because ```COUNT(DISTINCT column_name)``` is not supported in Microsoft Access databases.
+With query above, we can get the result is :
+
+![Figure 1](/images/basic-structured-query-language-part-1/3.png)
+
+
+### WHERE Statement
+WHERE digunakan untuk memfilter data, WHERE juga digunakan untuk mengekstrak hanya catatan yang memenuhi kondisi tertentu.
+
+| Operator | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| =        | Equal                                                                       |
+| <>       | Not equal. Note: In some versions of SQL this operator may be written as != |
+| >        | Greater than                                                                |
+| <        | Less than                                                                   |
+| >=       | Greater than or equal                                                       |
+| <=       | Less than or equal                                                          |
+| BETWEEN  | Between an inclusive range                                                  |
+| LIKE     | Search for a pattern                                                        |
+| IN       | To specify multiple possible values for a column                            |
+
+```
+SELECT * FROM Customers
+WHERE Country='Mexico';
+```
+With query above, we can get the result is :
+
+![Figure 1](/images/basic-structured-query-language-part-1/4.png)
+
+```
+SELECT * FROM Customers
+WHERE CustomerID=1;
+```
+With query above, we can get the result is :
+
+![Figure 1](/images/basic-structured-query-language-part-1/5.png)
+
+I want to try to make the next part. So, stay tune!
+
+Sumber : https://www.w3schools.com/sql
